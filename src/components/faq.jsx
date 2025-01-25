@@ -5,10 +5,10 @@ import Accordion from './accordion'
 
 const faq = () => {
   return (
-    <div id='faq' >
-        <div className="spandiv relative bg-current rounded-xl">
-        <span className='text-clr2'>FREQUENTLY</span>
-        <span className='text-clr4'>ASKED</span>
+    <div id='faq' className='bg-bgc' >
+        <div className="spandiv relative bg-bgc rounded-xl border-black border-2">
+        <span className='text-clr2' >FREQUENTLY</span>
+        <span className='text-black'>ASKED</span>
         <span className='text-clr1'>QUESTIONS</span>
         </div>
         <div className="list flex flex-wrap min-w-full p-3  justify-around">

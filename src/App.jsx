@@ -1,9 +1,9 @@
 
 import React from "react";
   import './App.css'
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar";
   import Partners from './components/Partners'
-
+  import Faq from "./components/faq";
 function App() {
   return (
     <div>
@@ -11,6 +11,7 @@ function App() {
       <main>
       </main>
     <Partners />
+    <Faq/>
     </div>
   );
 }

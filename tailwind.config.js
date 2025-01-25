@@ -8,6 +8,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
+		bgc: '#fad199',
         clr1: '#EA4740',
   		clr2: '#419A94',
   		clr3: '#B5DCBF',
