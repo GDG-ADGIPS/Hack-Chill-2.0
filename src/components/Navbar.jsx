@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-import Logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={Logo} alt="Logo" className="logo" />
+        <img src="/pics/logo.svg" alt="Logo" className="logo" /> 
+        {/* Logo  */}
         <span className="brand">Hack & Chill 2.0</span>
       </div>
       <ul className="navbar-links">
