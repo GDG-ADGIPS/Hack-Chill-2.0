@@ -1,0 +1,39 @@
+:root{
+    --clr1:#FAC02E;
+    --clr2:#EA4740;
+    --clr3: #03A94B;
+
+}
+*{
+    font-family: "standie";
+}
+@font-face {
+    font-family: 'standie'; /* Choose a name for the font */
+    src: url('../assets/Standie-Bold.ttf') format('truetype'); /* Link to the font file */
+    font-weight: normal; /* Optional: specify weight */
+    font-style: normal;  /* Optional: specify style */
+  }
+  
+#faq{
+    text-align: center;
+    font-family: "standie";
+    color: black;
+    font-size: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 95vw;
+    border: 2px solid black;
+    margin: 7% auto;
+}
+
+.spandiv{
+    left: -2%;
+    top: -10%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
