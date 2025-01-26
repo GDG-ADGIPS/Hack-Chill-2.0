@@ -1,37 +1,93 @@
 .hero-section {
-  background: url("/public/pics/hero-background.svg") repeat center center/cover;
-  width: 100vw;
-  height: 100vh;
+  background: url("/pics/hero-background.svg") repeat center center/cover;
+  width: 100%;
+  min-height: 100vh;
   margin-top: -20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 .hero-section-heading {
   position: relative;
+  text-align: center;
+  /* width: 100%; */
+  max-width: 100%;
+  /* border: 2px solid black; */
 }
-.hero-section-heading-image1 {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: -50px;
-  right: -100px;
-}
+
+.hero-section-heading-image1,
 .hero-section-heading-image2 {
-  width: 100px;
-  height: 100px;
   position: absolute;
-  top: -50px;
-  left: -50px;
+  /* width: 100px;
+  height: 100px; */
+  object-fit: contain;
+}
+
+.hero-section-heading-image1 {
+  top: -100px;
+  right: 20px;
+  width: 200px;
+}
+
+.hero-section-heading-image2 {
+  top: -10px;
+  left: -10px;
+  width: 100px;
   transform: scaleX(-1);
 }
 
 .hero-section-heading h1 {
-  font-size: 7em;
+  font-size: clamp(2.5em, 10vw, 7em);
   color: var(--brand-color);
+  margin: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
+
 .hero-flower-images {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 800px; */
+  margin-top: 20px;
+  /* border: 2px solid black; */
+}
+
+.hero-flower-images img {
+  /* max-width: 500px; */
+  min-width: 20%;
+  /* width: 100%; */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-section-heading-image1,
+  .hero-section-heading-image2 {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+  }
+
+  .hero-section-heading-image1 {
+    right: -5%;
+  }
+
+  .hero-section-heading-image2 {
+    left: -5%;
+  }
+
+  /* .hero-flower-images {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .hero-flower-images img {
+    max-width: 70px;
+  } */
 }

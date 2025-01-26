@@ -69,8 +69,11 @@ body {
 @media screen and (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
+    padding: 1rem 0.5rem;
   }
-
+  .brand {
+    font-size: 1.5rem;
+  }
   .menu-toggle {
     display: block;
     position: absolute;
