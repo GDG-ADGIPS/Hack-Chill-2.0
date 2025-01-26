@@ -1,0 +1,37 @@
+.hero-section {
+  background: url("/public/pics/hero-background.svg") repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-heading {
+  position: relative;
+}
+.hero-section-heading-image1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -50px;
+  right: -100px;
+}
+.hero-section-heading-image2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  transform: scaleX(-1);
+}
+
+.hero-section-heading h1 {
+  font-size: 7em;
+  color: var(--brand-color);
+}
+.hero-flower-images {
+  display: flex;
+  justify-content: space-around;
+}

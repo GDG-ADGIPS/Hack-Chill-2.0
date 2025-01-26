@@ -1,19 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/pics/logo.svg" alt="Logo" className="logo" /> 
-        {/* Logo  */}
+        <img src="/pics/logo.svg" alt="Logo" className="logo" />
         <span className="brand">Hack & Chill 2.0</span>
       </div>
-      <ul className="navbar-links">
-        <li><a href="#" className="nav-link">home</a></li>
-        <li><a href="#" className="nav-link">partners</a></li>
-        <li><a href="#" className="nav-link">contact us</a></li>
-        <li><a href="#" className="nav-link">faq</a></li>
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        <span className="menu-icon">☰</span>
+      </button>
+
+      <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
+        <li>
+          <a href="#" className="nav-link">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">
+            SPONSERS
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">
+            CONTACT US
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">
+            FAQ
+          </a>
+        </li>
       </ul>
     </nav>
   );

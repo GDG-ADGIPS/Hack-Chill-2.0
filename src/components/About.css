@@ -1,0 +1,17 @@
+.AboutUs {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 100vh; */
+  background-color: #f5f5f5;
+}
+.AboutUs h1 {
+  font-family: "Inter", serif;
+  font-size: 7em;
+  color: #a74925;
+  text-shadow: -4px -4px 2px #4f291e, 4px -4px 2px #4f291e, -4px 4px 2px #4f291e,
+    4px 4px 2px #4f291e;
+  transform: rotate(10deg);
+
+  /* font-weight: 700; */
+}
