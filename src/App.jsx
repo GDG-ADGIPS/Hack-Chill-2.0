@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <Herosection />
-      {/* <About /> */}
+      <About />
       {/* <Partners />
       <Faq /> */}
     </div>
