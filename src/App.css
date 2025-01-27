@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @font-face {
-  font-family: "CustomFont";
-  src: url("./assets/fonts/Standie-Bold.otf") format("opentype"),
-    url("./assets/fonts/StandieItalic-BoldItalic.otf") format("opentype"),
-    url("./assets/fonts/Standie-Bold.ttf") format("truetype"),
-    url("./assets/fonts/StandieItalic-BoldItalic.ttf") format("truetype");
+  font-family: "StandieFont";
+  src: url("/fonts/Standie-Bold.otf") format("opentype"),
+    url("/fonts/StandieItalic-BoldItalic.otf") format("opentype"),
+    url("/fonts/Standie-Bold.ttf") format("truetype"),
+    url("/fonts/StandieItalic-BoldItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "BeehiveFont";
-  src: url("/public/fonts/HexGirlfriendRegular-KPpA.ttf") format("truetype");
+  src: url("/fonts/HexGirlfriendRegular-KPpA.ttf") format("truetype");
 }
 :root {
   --bg-color: #e4d9ba;
