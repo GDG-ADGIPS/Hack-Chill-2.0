@@ -15,32 +15,38 @@ const Tracks = () => {
         {/* Track 1 */}
         <div className="track-card">
           <img
-            src="public/pics/palestineflag.png" // Replace with the flag icon's path
-            alt="Palestine Flag"
+            src="public/pics/Blockchain.png" // Replace with the flag icon's path
+            alt="Blockchain PNG"
             className="track-icon"
           />
-          <h2 className="track-title">Free Palestine</h2>
-          <p className="track-description">#Ceasefire</p>
+          <h2 className="track-title">BlockChain</h2>
+          <p className="track-description">Description goes here,
+write anything you want.</p>
         </div>
 
         {/* Track 2 */}
         <div className="track-card">
-          <div className="track-placeholder">
-            <span className="track-placeholder-text">$</span>
-          </div>
-          <h2 className="track-title">Title</h2>
-          <p className="track-description">Description goes here, write anything you want.</p>
+          <img
+            src="pics/ARVR.png" // Replace with the flag icon's path
+            alt="ARVR PNG"
+            className="track-icon"
+          />
+          <h2 className="track-title">AR/VR</h2>
+          <p className="track-description">Description goes here,
+write anything you want.</p>
         </div>
+
 
         {/* Track 3 */}
         <div className="track-card">
           <img
-            src="public/pics/clickableimage.svg" // Replace with the logo path
-            alt="UXCEL Logo"
+            src="pics/Cybersecurity.png" // Replace with the logo path
+            alt="Cybersecurity PNG"
             className="track-icon"
           />
-          <h2 className="track-title">UI Design Certification</h2>
-          <p className="track-description">starting at $8/mo annually</p>
+          <h2 className="track-title">Cybersec</h2>
+          <p className="track-description">Description goes here,
+write anything you want.</p>
         </div>
       </div>
     </div>
