@@ -1,0 +1,95 @@
+/* Tracks.css */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    font-family: "IBM Plex Mono", serif;
+}
+
+.tracks-container {
+  background-color: var(--bg-color); 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracks-header {
+  margin-bottom: 20px;
+}
+
+.tracks-header-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.tracks-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  position: relative; /* For overlapping center card */
+}
+
+/* Card Styles */
+.track-card {
+  border: 5px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+  background-color: #5e3a32; 
+  color: white;
+  border-radius: 20px;
+  padding: 30px; 
+  text-align: center;
+  flex: 1;
+  max-width: 300px; 
+  min-height: 400px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* For overlap adjustments */
+}
+
+.tracks-cards-container .track-card:nth-child(2) {
+  transform: translateY(-20px); 
+  margin-left: -20px; 
+  margin-right: -20px; 
+  z-index: 1; 
+}
+
+.track-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.track-icon {
+  width: 60px; 
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.track-title {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.track-description {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.track-placeholder {
+  width: 70px; 
+  height: 70px;
+  border-radius: 10px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.track-placeholder-text {
+  font-size: 28px; 
+  color: #5e3a32;
+  font-weight: bold;
+}

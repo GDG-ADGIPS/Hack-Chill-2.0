@@ -5,14 +5,14 @@
   align-items: center;
 }
 .aboutUS-heading img {
-  max-width: 60%;
+  max-width: 100%;
+  height: auto;
 }
 .aboutus-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  /* flex-direction: column; */
 }
 .aboutus-content img {
   width: 50%;
