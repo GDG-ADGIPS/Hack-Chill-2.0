@@ -7,6 +7,7 @@ import Faq from "./components/Faq/faq";
 import Herosection from "./components/Herosection/Herosection";
 import About from "./components/About/About";
 import Timeline from "./components/Timeline/Timeline";
+import Prizes from "./components/Prizes/Prizes";
 function App() {
   return (
     <div>
