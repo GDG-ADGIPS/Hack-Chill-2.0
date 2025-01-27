@@ -46,7 +46,6 @@
   color: var(--brand-color);
   margin: 0;
   max-width: 100%;
-  overflow-wrap: break-word;
   font-family: "StandieFont", sans-serif;
 }
 
