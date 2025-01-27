@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Tracks from "./components/Tracks/Tracks";
@@ -15,6 +14,7 @@ function App() {
       <Herosection />
       <About />
       <Tracks />
+      <Timeline />
       <Partners />
       <Prizes/>
       <Faq />
