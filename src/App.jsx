@@ -15,7 +15,7 @@ function App() {
       <About />
       <Tracks />
       <Partners />
-      <Timeline />
+      <Prizes/>
       <Faq />
     </div>
   );
