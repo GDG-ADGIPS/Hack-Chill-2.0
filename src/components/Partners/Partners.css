@@ -1,46 +1,23 @@
-@font-face {
-  font-family: 'Standie';
-  src: url('./assets/fonts/Standie-Bold.otf') format('opentype'),
-       url('./assets/fonts/StandieItalic-BoldItalic.otf') format('opentype'),
-       url('./assets/fonts/Standie-Bold.ttf') format('truetype'),
-       url('./assets/fonts/StandieItalic-BoldItalic.ttf') format('truetype');
-}
-
 .partners-container {
-  background-color: #FAD199;
-  padding: 2rem;
-  font-family: 'Standie', sans-serif;
-  border: 2px solid #000;
-  border-radius: 16px;
-  position: relative;
-  margin: 4rem auto 0;
+  background-color: var(--bg-color);
+  /* height: 100vh; */
 }
 
 .partners-header {
-  font-family: 'Standie';
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  background-color: #FAD199;
-  padding: 0.5rem 1rem;
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  /* width: 100vw; */
+  /* border: 2px solid black; */
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  border: 2px solid #000;
-  border-radius: 16px;
 }
 
 .partners-header img {
-  width: 60px;
-  height: auto;
+  min-width: 50%;
 }
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   max-width: 1200px;
   margin: 4rem auto 0;
@@ -50,7 +27,7 @@
   background-color: #fff;
   border: 3px solid #000;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +38,7 @@
 }
 
 .partner-card:hover {
-  transform: translate(-2px, -2px);
+  transform: translate(2px, 2px);
   box-shadow: 8px 8px 0 #000;
 }
 
