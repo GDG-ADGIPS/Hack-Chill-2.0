@@ -7,7 +7,11 @@ const Tracks = () => {
       {/* SVG Header */}
       <div className="tracks-header">
         {/* Replace this with the SVG import */}
-        <img src="public/pics/track.svg" alt="Tracks Header" className="tracks-header-image" />
+        <img
+          src="pics/track.svg"
+          alt="Tracks Header"
+          className="tracks-header-image"
+        />
       </div>
 
       {/* Tracks Container */}
@@ -15,13 +19,14 @@ const Tracks = () => {
         {/* Track 1 */}
         <div className="track-card">
           <img
-            src="public/pics/Blockchain.png" // Replace with the flag icon's path
+            src="pics/Blockchain.png" // Replace with the flag icon's path
             alt="Blockchain PNG"
             className="track-icon"
           />
           <h2 className="track-title">BlockChain</h2>
-          <p className="track-description">Description goes here,
-write anything you want.</p>
+          <p className="track-description">
+            Description goes here, write anything you want.
+          </p>
         </div>
 
         {/* Track 2 */}
@@ -32,10 +37,10 @@ write anything you want.</p>
             className="track-icon"
           />
           <h2 className="track-title">AR/VR</h2>
-          <p className="track-description">Description goes here,
-write anything you want.</p>
+          <p className="track-description">
+            Description goes here, write anything you want.
+          </p>
         </div>
-
 
         {/* Track 3 */}
         <div className="track-card">
@@ -45,8 +50,9 @@ write anything you want.</p>
             className="track-icon"
           />
           <h2 className="track-title">Cybersec</h2>
-          <p className="track-description">Description goes here,
-write anything you want.</p>
+          <p className="track-description">
+            Description goes here, write anything you want.
+          </p>
         </div>
       </div>
     </div>
