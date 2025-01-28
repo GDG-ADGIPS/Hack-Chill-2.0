@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { useRef ,useEffect} from 'react'
 import "./Prizes.css"
 const Prizes = () => {
@@ -35,7 +34,13 @@ const Prizes = () => {
     },[])
   return (
     <div id='prizes' className='mt-6'>
-        <span>Prizes</span>
+        <div className="prizes-heading">
+          <img
+            src="/pics/prizes.svg"
+            alt="prizes"
+            className="heading"
+          />
+        </div>
         <div className="frames flex w-full justify-center items-center relative bottom-9 gap-3" id='frames'>
             <img  ref={svg1} src='/pics/Frame100.svg' height={230} width={230} className='relative left-16 z-0 -rotate-12 top-4'/>
             <img src='/pics/Frame99.svg'  height={330} width={330} className='relative z-10'/>
