@@ -9,12 +9,12 @@ const Timeline = () => {
             const scrollPercentage =
                 cardsContainer.scrollTop / (cardsContainer.scrollHeight - cardsContainer.clientHeight);
 
-            const thumbPosition = scrollPercentage * (cardsContainer.clientHeight - 30); // Adjust thumb position
+            const thumbPosition = scrollPercentage * (cardsContainer.clientHeight - 20); // Adjust thumb position
             slider.style.setProperty('--thumb-top', `${thumbPosition}px`);
 
             const fillPercentage = scrollPercentage * 100; 
 
-            slider.style.background = `linear-gradient(to bottom, #F57C00 ${fillPercentage}%, #E4D9BA ${fillPercentage}%)`;
+            slider.style.background = `linear-gradient(to bottom, #E35734 ${fillPercentage}%, #E4D9BA ${fillPercentage}%)`;
         };
 
         cardsContainer.addEventListener('scroll', updateSliderPosition);
@@ -90,6 +90,7 @@ const Timeline = () => {
                 </div>
             </div>
             <div className="custom-slider"></div>
+            
         </div>
     );
 };
