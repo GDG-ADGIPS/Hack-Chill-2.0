@@ -1,38 +1,79 @@
-
-*{
-    font-family: "standie";
+/* FAQ Container */
+.faq-container {
+  margin-top: 40px;
+  width: 100%;
+  padding: 20px;
+  background-color: #e4d9ba;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  min-height: 50vh;
 }
-@font-face {
-    font-family: 'standie'; /* Choose a name for the font */
-    src: url('fonts//Standie-Bold.ttf') format('truetype'); /* Link to the font file */
-    font-weight: normal; /* Optional: specify weight */
-    font-style: normal;  /* Optional: specify style */
+
+/* Header Section */
+.faq-header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-image {
+  /* width: 60%; */
+  height: auto;
+}
+
+/* FAQ Content Grid Layout */
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.faq-question {
+  font-family: "Albert Sans", sans-serif;
+}
+.faq-answer {
+  font-family: "Albert Sans", sans-serif;
+}
+@media (min-width: 768px) {
+  .faq-content {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-#faq{
-    text-align: center;
-    font-family: "standie";
-    color: black;
-    font-size: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 60vh;
-    width: 95vw;
-    border: 2px solid black;
-    margin: 7% auto;
 }
 
-.spandiv{
-    left: -2%;
-    top: -10%;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
+/* FAQ Items */
+.faq-item {
+  background-color: #e4d9ba;
+  border: 2px solid #4f291e;
+  box-shadow: 4px 4px 0px #4f291e;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
-.accordion{
-    border: 5px solid black;
-    box-shadow: 5px 5px 0 black;
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0px #4f291e;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4f291e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #4f291e;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #4f291e;
+  line-height: 1.5;
 }

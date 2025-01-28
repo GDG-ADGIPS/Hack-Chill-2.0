@@ -10,21 +10,18 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin-bottom: 20px;
 }
 
 .hero-section-heading {
   position: relative;
   text-align: center;
-  /* width: 100%; */
   max-width: 100%;
-  /* border: 2px solid black; */
 }
 
 .hero-section-heading-image1,
 .hero-section-heading-image2 {
   position: absolute;
-  /* width: 100px;
-  height: 100px; */
   object-fit: contain;
 }
 
@@ -46,24 +43,59 @@
   color: var(--brand-color);
   margin: 0;
   max-width: 100%;
-  overflow-wrap: break-word;
   font-family: "StandieFont", sans-serif;
 }
 
 .hero-flower-images {
   display: flex;
   justify-content: center;
+  gap: 2rem;
   width: 100%;
-  /* max-width: 800px; */
   margin-top: 20px;
-  /* border: 2px solid black; */
 }
 
-.hero-flower-images img {
-  /* max-width: 500px; */
-  min-width: 20%;
-  /* width: 100%; */
+.flower-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 200px; */
+}
+
+.flower {
+  width: 100%;
   height: auto;
+}
+
+.countdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  aspect-ratio: 1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.countdown .number {
+  font-family: "BeehiveFont", sans-serif;
+  font-size: 5em;
+  color: #ffd700;
+  text-shadow: -2px 2px 0 #fb4511, 2px -2px 0 #fb4511, -2px -2px 0 #fb4511,
+    2px 2px 0 #fb4511, 3px 3px 0 #fb4511, 6px 6px 0 #d93c0d;
+}
+
+.countdown .label {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  /* color: #fff; */
+  color: var(--brand-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -20px;
 }
 
 @media (max-width: 768px) {
@@ -82,13 +114,15 @@
     left: -5%;
   }
 
-  /* .hero-flower-images {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  .flower-container {
+    width: 120px;
   }
 
-  .hero-flower-images img {
-    max-width: 70px;
-  } */
+  .countdown .number {
+    font-size: 1.8em;
+  }
+
+  .countdown .label {
+    font-size: 0.8em;
+  }
 }

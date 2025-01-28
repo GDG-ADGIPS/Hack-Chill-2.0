@@ -1,18 +1,29 @@
+.AboutUs {
+  min-height: 100vh;
+}
 .aboutUS-heading {
   width: 100%;
+  /* border: 2px solid var(--brand-color); */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+}
+.heading {
+  transition: transform 0.3s ease;
+}
+.heading:hover {
+  transform: rotate(-10deg);
 }
 .aboutUS-heading img {
   max-width: 60%;
+  height: auto;
 }
 .aboutus-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  /* flex-direction: column; */
 }
 .aboutus-content img {
   width: 50%;
@@ -24,7 +35,7 @@
 .aboutus-content p {
   font-family: "Inter", sans-serif;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: var(--brand-color);
   opacity: 70%;
   font-weight: 600;

@@ -5,94 +5,50 @@ const Partners = () => {
   const partnersData = [
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/BobbleAI.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/ETHIndia.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/Devfolio.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/xyz.jpeg",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/Decathlon-Logo.jpg",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/Polygon_blockchain_logo.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/orkes_logo.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
       name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/sample.png",
+      logo: "/pics/kwikpic_logo.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
   ];
 
   return (
-    <div className="partners-container">
+    <div className="partners-container container">
       <div className="partners-header">
-        <img
-          src="	https://hackathon.hackthisfall.tech/images/icons/home/arrows.svg"
-          alt="icon"
-        />
-        Partners
+        <img src="/pics/prevsponsors.svg" alt="" className="heading" />
       </div>
       <div className="partners-grid">
         {partnersData.map((partner, index) => (

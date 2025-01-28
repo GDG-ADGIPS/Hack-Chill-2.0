@@ -1,0 +1,18 @@
+*{
+    font-family: "StandieFont";
+
+}
+#prizes{
+    color: #A74925;
+    font-size: 90px;
+    background-image: url(/public/pics/bg.png);
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+}
+#prizes span{
+    position: relative;
+    left: 4%;
+}

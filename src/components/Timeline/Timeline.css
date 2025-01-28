@@ -1,100 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
 
 .timeline-container {
-    height: 100vh;
-    padding-top: 50px;
-    background-color: #6A4335;
-    position: sticky;
-    overflow-x: hidden;
-    background-image: url('pics/timelinebg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #6a4335;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url("pics/timelinebg.svg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
 }
 
 .timeline-heading {
-    height: 200px;
-    text-align: center;
+  height: 200px;
+  text-align: center;
 }
 
 .timeline-heading img {
-    margin: 0 auto;
+  margin: 0 auto;
+  /* width: 50%; */
 }
 
 .timeline-cards {
-    width: 100vw;
-    height: calc(100vh - 250px);
-    overflow-y: auto;
-    position: relative;
+  width: 100vw;
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+  position: relative;
 }
 
 .timeline-cards .card {
-    font-family: 'Space Mono', monospace;
-    border-radius: 45px;
-    border: 7px solid #4F291E;
-    background-color: #E4D9BA;
-    width: 940px;
-    height: 220px;
-    margin: 40px auto;
-    padding: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  border-radius: 45px;
+  border: 7px solid #4f291e;
+  background-color: #e4d9ba;
+  width: 60%;
+  max-width: 900px;
+  height: 150px;
+  margin: 40px auto;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card1, .card3, .card5, .card7 {
-    position: relative;
-    left: -200px;
+.timeline-cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 50px;
+}
+.card1,
+.card3,
+.card5,
+.card7 {
+  position: relative;
+  left: -200px;
 }
 
-.card2, .card4, .card6, .card8 {
-    position: relative;
-    right: -130px;
+.card2,
+.card4,
+.card6,
+.card8 {
+  position: relative;
+  right: -130px;
 }
 
 .card .header {
-    color: #4F291E;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    font-weight: 700;
-    font-size: 54px;
-    margin-left: 20px;
-}
+  color: #4f291e;
+  display: flex;
+  align-items: center;
 
+  /* justify-content: center; */
+  gap: 20px;
+  /* font-weight: 700; */
+  font-size: 1.5rem;
+  /* margin-left: 20px; */
+}
+.card h2 {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+}
 .card p {
-    font-weight: 400;
-    font-size: 48px;
-    margin-left: 115px;
-    color: #4F291E;
-    margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-left: 70px;
+  color: #4f291e;
+  /* margin-top: 20px; */
+  font-family: "Albert Sans", sans-serif;
 }
 
-/* Full height slider */
 .custom-slider {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    width: 30px;
-    height: 70vh;
-    margin-top: 220px;
-    border-radius: 20px;
-    border: 4px solid #4F291E;
-    background-color: #E4D9BA; 
-    cursor: pointer;
-    background: linear-gradient(to bottom, #E4D9BA 0%, #E4D9BA 0%); 
-   
-
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 30px;
+  height: 70vh;
+  margin-top: 220px;
+  border-radius: 20px;
+  border: 4px solid #4f291e;
+  background-color: #e4d9ba;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #e4d9ba 0%, #e4d9ba 0%);
 }
-
 
 .custom-slider::before {
-    content: '';
-    position: absolute;
-    top: var(--thumb-top, 0); 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background: #E4D9BA;
-    border-radius: 50%;
-    border: 4px solid #4F291E;
+  content: "";
+  position: absolute;
+  top: var(--thumb-top, 0);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: #e4d9ba;
+  border-radius: 50%;
+  border: 4px solid #4f291e;
+}
 
+@media (max-width: 768px) {
+  .timeline-container {
+    padding-top: 20px;
+    background-size: cover;
+  }
+
+  .timeline-heading {
+    height: 150px;
+  }
+
+  .timeline-heading img {
+    width: 80%;
+  }
+
+  .timeline-cards {
+    height: calc(100vh - 200px);
+  }
+
+  .timeline-cards .card {
+    height: 180px;
+    padding: 20px;
+  }
+
+  .card .header {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    margin-left: 80px;
+  }
+
+  .card1,
+  .card3,
+  .card5,
+  .card7 {
+    left: -50px;
+  }
+
+  .card2,
+  .card4,
+  .card6,
+  .card8 {
+    right: -50px;
+  }
+
+  .custom-slider {
+    right: 10px;
+    height: 50vh;
+  }
+
+  .custom-slider::before {
+    width: 30px;
+    height: 30px;
+  }
 }

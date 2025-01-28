@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#" className="nav-link">
-            SPONSERS
+            SPONSORS
           </a>
         </li>
         <li>
