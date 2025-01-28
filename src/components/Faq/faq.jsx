@@ -46,7 +46,7 @@ const FAQ = () => {
   };
 
   return (
-    <div id="faq" className="faq-container">
+    <div id="faq" className="faq-container container">
       <div className="faq-header">
         <img src="/pics/faq.svg" alt="FAQ" className="faq-image heading" />
       </div>
