@@ -23,6 +23,26 @@ const Partners = () => {
       logo: "/pics/xyz.jpeg",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
+    {
+      name: "name",
+      logo: "/pics/Decathlon-Logo.jpg",
+      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
+    },
+    {
+      name: "name",
+      logo: "/pics/Polygon_blockchain_logo.png",
+      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
+    },
+    {
+      name: "name",
+      logo: "/pics/orkes_logo.png",
+      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
+    },
+    {
+      name: "name",
+      logo: "/pics/kwikpic_logo.png",
+      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
+    },
   ];
 
   return (

@@ -1,29 +1,78 @@
-#faq {
-  text-align: center;
-}
-.accordion-item {
-  background-color: #e4d9ba;
-  box-shadow: 4px 4px 0px #4f291e;
+/* FAQ Container */
+.faq-container {
+  margin-top: 40px;
+  width: 100%;
   padding: 20px;
-  border-radius: 8px;
+  background-color: #e4d9ba;
   font-family: Arial, sans-serif;
-  width: 90%;
+  box-sizing: border-box;
+  min-height: 50vh;
+}
+
+/* Header Section */
+.faq-header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-image {
+  /* width: 60%; */
+  height: auto;
+}
+
+/* FAQ Content Grid Layout */
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.faq-question {
+  font-family: "Albert Sans", sans-serif;
+}
+.faq-answer {
+  font-family: "Albert Sans", sans-serif;
+}
+@media (min-width: 768px) {
+  .faq-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* FAQ Items */
+.faq-item {
+  background-color: #e4d9ba;
+  border: 2px solid #4f291e;
+  box-shadow: 4px 4px 0px #4f291e;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.accordion-item:hover {
+.faq-item:hover {
   transform: translateY(-4px);
   box-shadow: 6px 6px 0px #4f291e;
 }
 
-.accordion-item h3 {
+.faq-question {
   font-size: 1.2rem;
   font-weight: bold;
   color: #4f291e;
-  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.accordion-item p {
+.faq-icon {
+  font-size: 1.5rem;
+  color: #4f291e;
+}
+
+.faq-answer {
+  margin-top: 10px;
   font-size: 1rem;
   color: #4f291e;
   line-height: 1.5;
