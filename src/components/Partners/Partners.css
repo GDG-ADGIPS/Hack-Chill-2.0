@@ -1,6 +1,7 @@
 .partners-container {
   background-color: var(--bg-color);
-  /* height: 100vh; */
+  min-height: 50vh;
+  margin-top: 40px;
 }
 
 .partners-header {

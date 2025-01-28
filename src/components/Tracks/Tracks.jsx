@@ -10,7 +10,7 @@ const Tracks = () => {
         <img
           src="pics/track.svg"
           alt="Tracks Header"
-          className="tracks-header-image"
+          className="tracks-header-image heading"
         />
       </div>
 
