@@ -1,6 +1,5 @@
 import React from "react";
 import "./Herosection.css";
-
 const Herosection = () => {
   return (
     <div className="hero-section">
@@ -18,14 +17,37 @@ const Herosection = () => {
         />
       </div>
       <div className="hero-flower-images">
-        <img src="/pics/redflower.svg" alt="Red flower" className="flower2" />
-        <img src="/pics/blueflower.svg" alt="Blue flower" className="flower1" />
+        <div className="flower-container">
+          <img src="/pics/redflower.svg" alt="Red flower" className="flower" />
+          <div className="countdown red">
+            <span className="number">60</span>
+            <span className="label">days</span>
+          </div>
+        </div>
 
-        <img
-          src="/pics/yellowflower.svg"
-          alt="Yellow flower"
-          className="flower3"
-        />
+        <div className="flower-container">
+          <img
+            src="/pics/blueflower.svg"
+            alt="Blue flower"
+            className="flower"
+          />
+          <div className="countdown blue">
+            <span className="number">60</span>
+            <span className="label">hours</span>
+          </div>
+        </div>
+
+        <div className="flower-container">
+          <img
+            src="/pics/yellowflower.svg"
+            alt="Yellow flower"
+            className="flower"
+          />
+          <div className="countdown yellow">
+            <span className="number">60</span>
+            <span className="label">mins</span>
+          </div>
+        </div>
       </div>
     </div>
   );

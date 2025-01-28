@@ -26,9 +26,9 @@ const Partners = () => {
   ];
 
   return (
-    <div className="partners-container">
+    <div className="partners-container container">
       <div className="partners-header">
-        <img src="/pics/prevsponsers.svg" alt="" />
+        <img src="/pics/prevsponsors.svg" alt="" className="heading" />
       </div>
       <div className="partners-grid">
         {partnersData.map((partner, index) => (

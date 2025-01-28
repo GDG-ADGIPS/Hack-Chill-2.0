@@ -1,4 +1,30 @@
 #faq {
   text-align: center;
-  font-family: "standie";
+}
+.accordion-item {
+  background-color: #e4d9ba;
+  box-shadow: 4px 4px 0px #4f291e;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  width: 90%;
+  transition: transform 0.2s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0px #4f291e;
+}
+
+.accordion-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4f291e;
+  margin-bottom: 8px;
+}
+
+.accordion-item p {
+  font-size: 1rem;
+  color: #4f291e;
+  line-height: 1.5;
 }

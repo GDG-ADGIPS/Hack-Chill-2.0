@@ -16,7 +16,7 @@ function App() {
       <Tracks />
       <Timeline />
       <Partners />
-      <Prizes/>
+      {/* <Prizes /> */}
       <Faq />
     </div>
   );
