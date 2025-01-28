@@ -7,6 +7,7 @@ import Herosection from "./components/Herosection/Herosection";
 import About from "./components/About/About";
 import Timeline from "./components/Timeline/Timeline";
 import Prizes from "./components/Prizes/Prizes";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
@@ -17,7 +18,7 @@ function App() {
       <Timeline />
       <Partners />
       {/* <Prizes /> */}
-      <Faq />
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,118 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap"); */
+footer{
+  margin-top: 50px;
+  height: 300px;
+  width:100%;
+  overflow: hidden;
+  border-top: 3px solid black ;
+  box-sizing: border-box;
+ 
+}
+
+.main-footer{
+  /* background-color: orange; */
+  height: 100%;
+  width:100% ;
+  display: flex;;
+  gap: 30px;
+}
+.main-footer-left{
+  border-right: 3px solid black;
+  
+  /* background-color: red; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.main-footer-left h2{
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #cf3f1b;
+  cursor: default;
+  /* background-color: wheat; */
+}
+.main-footer-left button{
+    background-color:#f8623c;
+    color: var(--black);
+    cursor: pointer;
+    border: .2em solid #000;
+    border-radius: 500px;
+    height: 70px;
+    width: 230px;
+    padding: 10px;
+    line-height: 1;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.main-footer-left button:hover {
+  box-shadow: 6px 6px 0 0 black;
+  transform: translate(-8px, -8px);
+}
+.main-footer-left .btn-text{
+font-size: 26px;
+letter-spacing: 2px;
+}
+
+.arrow {
+  font-size: 35px;
+  margin-left: 0.3em;
+  transition: 0.4s ease-in-out;
+}
+.main-footer-left button:hover .arrow{
+  transform: translateX(0.2em);
+
+}
+.main-footer-right{
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 100px;
+  line-height: 40px;
+  font-size: 22px;
+}
+.section-link{
+  /* background-color: orange; */
+  height: 100%;
+  display: flex;
+  /* padding-top:50px ; */
+  align-items: start;
+  justify-content: center;
+  gap: 110px;
+}
+.section-link li{
+  transition: 0.2s ease;
+  cursor: pointer;
+   
+}
+.section-link li:hover{
+ color:#f8623c;
+ transform: scale(1.05);
+
+
+}
+.social{
+  height: 100%;
+  cursor: default;
+  /* background: orange; */
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.icons :hover{
+  color: #f8623c;
+}
