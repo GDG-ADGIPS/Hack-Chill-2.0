@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="main-footer">
         <div className="main-footer-left">
             <h2>Let's get you registered!</h2>
-            <button><div className='btn-text  font-extralight'>Let's Talk</div> <div className='arrow'>→</div> </button>
+            <button><div className='btn-text '>Let's Talk</div> <div className='arrow'>→</div> </button>
         </div>
         <div className="main-footer-right">
         <div className="section-link">

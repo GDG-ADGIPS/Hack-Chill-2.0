@@ -1,38 +1,44 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap"); */
 footer{
   margin-top: 50px;
-  height: 300px;
+  min-height: 300px;
   width:100%;
-  overflow: hidden;
-  border-top: 3px solid black ;
+  overflow-x:hidden ;
+
+  /* background-color: orange; */
   box-sizing: border-box;
- 
 }
 
 .main-footer{
-  /* background-color: orange; */
+  /* background-color: rgb(56, 38, 6); */
   height: 100%;
   width:100% ;
-  display: flex;;
-  gap: 30px;
-}
-.main-footer-left{
-  border-right: 3px solid black;
-  
-  /* background-color: red; */
-  width: 60%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 30px;
+  border-top: 3px solid black ;
+}
+.main-footer-left{
+  border-right: 3px solid black;
+  /* background-color: red; */
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
 }
 .main-footer-left h2{
   font-size: 40px;
   letter-spacing: 2px;
   color: #cf3f1b;
   cursor: default;
-  /* background-color: wheat; */
+  width: auto;
+  /* background-color: rgb(240, 162, 18); */
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 .main-footer-left button{
     background-color:#f8623c;
@@ -50,13 +56,14 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin: 0 auto;
 }
 .main-footer-left button:hover {
   box-shadow: 6px 6px 0 0 black;
   transform: translate(-8px, -8px);
 }
 .main-footer-left .btn-text{
-font-size: 26px;
+font-size:20px;
 letter-spacing: 2px;
 }
 
@@ -115,4 +122,67 @@ letter-spacing: 2px;
 
 .icons :hover{
   color: #f8623c;
+}
+@media  (max-width: 1000px) {
+  .main-footer{
+    display: block;
+    /* background-color: orange; */
+    border:none;
+  }
+  .main-footer-left{
+    width: 90%;
+    display: block;
+    /* background-color: rgb(90, 65, 19); */
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+    border: none;
+    border-bottom:2px solid black ;
+  }
+  .main
+  .main-footer-left button{
+    margin: 30px auto;
+  }
+  .main-footer-left button .btn-text{
+    font-size: 20px;
+  }
+  .main-footer-right{
+    width: 90%;
+    /* background-color:red; */
+    margin: 0 auto;
+    height:auto;
+  }
+
+}
+@media (max-width: 600px) {
+  .main-footer-left h2 {
+    font-size: 24px;
+  }
+
+  .main-footer-left button {
+    width: 180px;
+    height: 55px;
+  }
+  .main-footer-left button .btn-text{
+    font-size: 15px;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+
+  .main-footer-right {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-link {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
