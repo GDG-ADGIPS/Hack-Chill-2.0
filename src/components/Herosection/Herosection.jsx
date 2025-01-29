@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Register from "../Register/Register";
 import "./Herosection.css";
 
 const Herosection = () => {
@@ -80,6 +81,7 @@ const Herosection = () => {
           </div>
         </div>
       </div>
+      <Register />
     </div>
   );
 };
