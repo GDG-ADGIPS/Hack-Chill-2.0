@@ -96,9 +96,9 @@
 .countdown .number {
   font-family: "BeehiveFont", sans-serif;
   font-size: 5em;
-  color: #febc1d;
-  text-shadow: -2px 2px 1px #070707, 2px -2px 0 #fb8f0e, -2px -2px 0 #fb8f0e,
-    2px 2px 0 #fb8f0e, 3px 3px 0 #fb8f0e, 6px 6px 0 #d93c0d;
+  color: #ffd700;
+  text-shadow: -2px 2px 0 #fb4511, 2px -2px 0 #fb4511, -2px -2px 0 #fb4511,
+    2px 2px 0 #fb4511, 3px 3px 0 #fb4511, 6px 6px 0 #d93c0d;
 }
 
 .countdown .label {
