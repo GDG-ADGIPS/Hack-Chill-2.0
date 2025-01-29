@@ -29,7 +29,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="timeline-container">
+    <section className="timeline-container" id='timeline'>
       <div className="timeline-heading">
         <img
           src="/pics/timeline.svg"
@@ -100,7 +100,7 @@ const Timeline = () => {
         </div>
       </div>
       <div className="custom-slider"></div>
-    </div>
+    </section>
   );
 };
 

@@ -23,7 +23,20 @@
 .hero-section-heading-image2 {
   position: absolute;
   object-fit: contain;
+  /* animation: move 5s ease-in-out infinite; */
 }
+/* @keyframes move {
+  0% {
+    transform: translateY(10px);  
+  }
+  50% {
+    transform: translateX(10px); 
+  }
+  100% {
+    transform: translateY(10px);  
+  }
+  
+} */
 
 .hero-section-heading-image1 {
   top: -100px;
