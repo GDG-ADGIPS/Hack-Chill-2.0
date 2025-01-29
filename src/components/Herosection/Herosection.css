@@ -1,7 +1,7 @@
 .hero-section {
   background: url("/pics/hero-background.svg") repeat center center/cover;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin-top: -20px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-x: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .hero-section-heading {
@@ -65,6 +65,7 @@
   gap: 2rem;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .flower-container {
