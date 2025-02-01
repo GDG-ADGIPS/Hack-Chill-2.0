@@ -3,7 +3,12 @@ const Register = () => {
   return (
     <>
       <div className="Register">
-        <button>Register with Devfolio</button>
+        <div
+          className="apply-button"
+          data-hackathon-slug="hackandchill-1"
+          data-button-theme="light"
+          style={{ height: "44px", width: "312px" }}
+        ></div>
       </div>
     </>
   );
