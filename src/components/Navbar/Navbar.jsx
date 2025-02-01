@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link">
+          <a href="mailto:dscadgitm@gmail.com" className="nav-link">
             CONTACT US
           </a>
         </li>
