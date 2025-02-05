@@ -4,20 +4,26 @@ import Button from "../Button";
 const Partners = () => {
   const partnersData = [
     {
+      name: "Devfolio",
+      logo: "/pics/Devfolio.png",
+      link: "https://devfolio.co/",
+    },
+    {
+      name: "ETHIndia",
+      logo: "/pics/ETHIndia.png",
+      link: "https://ethindia2024.devfolio.co/",
+    },
+    {
+      name: "Polygon",
+      logo: "/pics/Polygon_blockchain_logo.png",
+      link: "https://polygon.technology/",
+    },
+    {
       name: "name",
       logo: "/pics/BobbleAI.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
-    {
-      name: "name",
-      logo: "/pics/ETHIndia.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/Devfolio.png",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
+
     {
       name: "name",
       logo: "/pics/xyz.jpeg",
@@ -26,11 +32,6 @@ const Partners = () => {
     {
       name: "name",
       logo: "/pics/Decathlon-Logo.jpg",
-      link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
-    },
-    {
-      name: "name",
-      logo: "/pics/Polygon_blockchain_logo.png",
       link: "https://github.com/GDG-ADGIPS/Hack-Chill-2.0",
     },
     {
