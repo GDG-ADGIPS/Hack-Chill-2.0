@@ -4,17 +4,17 @@ import Button from "../Button";
 const Partners = () => {
   const partnersData = [
     {
-      name: "Devfolio",
+      name: "DEVFOLIO LOGO",
       logo: "/pics/Devfolio.png",
       link: "https://devfolio.co/",
     },
     {
-      name: "ETHIndia",
+      name: "ETHINDIA LOGO",
       logo: "/pics/ETHIndia.png",
-      link: "https://ethindia2024.devfolio.co/",
+      link: "https://ethindia.co",
     },
     {
-      name: "Polygon",
+      name: "POLYGON LOGO",
       logo: "/pics/Polygon_blockchain_logo.png",
       link: "https://polygon.technology/",
     },
