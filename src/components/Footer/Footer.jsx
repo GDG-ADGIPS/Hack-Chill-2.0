@@ -1,53 +1,103 @@
-import React from 'react'
-import { Link } from 'react-scroll';
-import './Footer.css'
-import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
-const Footer = () => {
+import { ArrowUpRight } from "lucide-react";
+import "./Footer.css";
+
+export default function Footer() {
   return (
-    <footer className='footer'>
-      <div className="main-footer">
-        <div className="main-footer-left">
-            <h2>Let's get you registered!</h2>
-            <button><div className='btn-text '>Let's Talk</div> <div className='arrow'>→</div> </button>
+    <div className="footer">
+      <div className="footer-content">
+        <div className="header-section">
+          <h1 className="main-heading">
+            <span className="white-text">No Bugs,</span>
+            <br />
+            <span className="red-text">Just Good Vibes.</span>
+          </h1>
+          <img src="/pics/sun.png" alt="Sun mascot" className="mascot" />
         </div>
-        <div className="main-footer-right">
-        <div className="section-link">
-          <div className="link-col1"><ul>
-            <li><Link to=''>Home</Link></li>
-            <li><Link to='about'>About</Link></li>
-            <li><Link to="timeline" smooth={true} duration={500}>Timeline</Link></li>
-            <li><Link to='' duration={500} smooth={true}>FAQs</Link></li>
-            </ul>
+
+        <div className="info-sections">
+          <div className="venue-section">
+            <h2>THE VENUE</h2>
+            <p>
+              Dr. Akhilesh Das Gupta Institute of Professional Studies (ADGIPS)
+              <br />
+              Shastri Park, NEW DELHI
+            </p>
+
+            <div className="signup-section">
+              <h3>BE A PART OF THE FAM!</h3>
+              <div className="email-input-container">
+                <input
+                  type="email"
+                  placeholder="Enter your mail here"
+                  className="email-input"
+                />
+                <div className="arrow-container">
+                  <ArrowUpRight />
+                </div>
+              </div>
             </div>
-          <div className="link-col2">
+          </div>
+
+          <div className="about-section">
+            <h2>ABOUT US</h2>
             <ul>
-              <li><Link to='' duration={500} smooth={true}>Sponsers</Link></li>
-              <li><Link to='' duration={500} smooth={true}>Prizes</Link></li>
-              <li><Link to='' duration={500} smooth={true}>Events</Link></li>
+              <li><a href="">About Hack&Chill</a></li>
+              <li><a href="">Organizing Team</a></li>
+              <li><a href="">Our Sponsors</a></li>
+              <li><a href="">Previous Sponsors</a></li>
+              <li><a href="">GDG Community</a></li>
+              <li><a href="">Blogs</a></li>
             </ul>
           </div>
+
+          <div className="contact-section">
+            <h2>LET'S TALK FAM</h2>
+            <p><a href="">Questions? Comments?</a></p>
+            <p><a href="">Brand recs? Email us!</a></p>
+            <p><a href="">dscadgitmdelhi@gmail.com</a></p>
+            <br />
+            <div className="call-container">
+  <p>Shoot us a text!</p>
+  <a href="tel:9296000784" className="call-number">929-6000-PUG</a>
+</div>
+
           </div>
-          <div className="social">
-            <h2>Explore Us!</h2>
-            <div className="icons">
-          
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-black/70">
-        <FaInstagram size={30} />
-      </a>
-      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-black/70">
-        <FaXTwitter size={30} />
-      </a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-black/70">
-        <FaLinkedin size={30} />
-      </a>
-            </div>
+          <div className="social-links">
+            <a href="#" className="social-link">
+              <span>INSTAGRAM</span>
+              <ArrowUpRight />
+            </a>
+            <a href="#" className="social-link">
+              <span>LINKEDIN</span>
+              <ArrowUpRight />
+            </a>
+            <a href="#" className="social-link">
+              <span>H&C COMMUNITY</span>
+              <ArrowUpRight />
+            </a>
+            <a href="#" className="social-link">
+              <span>H&C ON X</span>
+              <ArrowUpRight />
+            </a>
           </div>
         </div>
-
       </div>
-      <div className="cr-footer"></div>
-    </footer>
-  )
+      <div className="marquee-container">
+        <div className="marquee-content">
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+          <span>HACK&CHILL • हैक एंड चिल • </span>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-export default Footer
