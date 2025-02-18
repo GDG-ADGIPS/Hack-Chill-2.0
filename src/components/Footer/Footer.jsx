@@ -41,26 +41,45 @@ export default function Footer() {
           <div className="about-section">
             <h2>ABOUT US</h2>
             <ul>
-              <li><a href="">About Hack&Chill</a></li>
-              <li><a href="">Organizing Team</a></li>
-              <li><a href="">Our Sponsors</a></li>
-              <li><a href="">Previous Sponsors</a></li>
-              <li><a href="">GDG Community</a></li>
-              <li><a href="">Blogs</a></li>
+              <li>
+                <a href="">About Hack&Chill</a>
+              </li>
+              <li>
+                <a href="">Organizing Team</a>
+              </li>
+              <li>
+                <a href="">Our Sponsors</a>
+              </li>
+              <li>
+                <a href="">Previous Sponsors</a>
+              </li>
+              <li>
+                <a href="">GDG Community</a>
+              </li>
+              <li>
+                <a href="">Blogs</a>
+              </li>
             </ul>
           </div>
 
           <div className="contact-section">
-            <h2>LET'S TALK FAM</h2>
-            <p><a href="">Questions? Comments?</a></p>
-            <p><a href="">Brand recs? Email us!</a></p>
-            <p><a href="">dscadgitmdelhi@gmail.com</a></p>
+            <h2>LET TALK FAM</h2>
+            <p>
+              <a href="">Questions? Comments?</a>
+            </p>
+            <p>
+              <a href="">Brand recs? Email us!</a>
+            </p>
+            <p>
+              <a href="">dscadgitmdelhi@gmail.com</a>
+            </p>
             <br />
             <div className="call-container">
-  <p>Shoot us a text!</p>
-  <a href="tel:9296000784" className="call-number">929-6000-PUG</a>
-</div>
-
+              <p>Shoot us a text!</p>
+              <a href="tel:9296000784" className="call-number">
+                929-6000-PUG
+              </a>
+            </div>
           </div>
           <div className="social-links">
             <a href="#" className="social-link">

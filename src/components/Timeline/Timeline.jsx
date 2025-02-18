@@ -2,34 +2,64 @@ import { useEffect } from "react";
 import "./Timeline.css";
 
 const Timeline = () => {
+  // Timeline.jsx
   useEffect(() => {
     const slider = document.querySelector(".custom-slider");
     const cardsContainer = document.querySelector(".timeline-cards");
+
     const updateSliderPosition = () => {
-      const scrollPercentage =
-        cardsContainer.scrollTop /
-        (cardsContainer.scrollHeight - cardsContainer.clientHeight);
+      if (window.innerWidth > 768) {
+        // Vertical scroll logic
+        const scrollPercentage =
+          cardsContainer.scrollTop /
+          (cardsContainer.scrollHeight - cardsContainer.clientHeight);
+        const thumbPosition =
+          scrollPercentage * (cardsContainer.clientHeight - 40);
+        slider.style.setProperty("--thumb-top", `${thumbPosition}px`);
+        slider.style.background = `linear-gradient(to bottom, #F57C00 ${
+          scrollPercentage * 100
+        }%, #E4D9BA ${scrollPercentage * 100}%)`;
+      } else {
+        // Horizontal scroll logic
+        const scrollPercentage =
+          cardsContainer.scrollLeft /
+          (cardsContainer.scrollWidth - cardsContainer.clientWidth);
 
-      const thumbPosition =
-        scrollPercentage * (cardsContainer.clientHeight - 30); // Adjust thumb position
-      slider.style.setProperty("--thumb-top", `${thumbPosition}px`);
+        // Use slider's width instead of container's
+        const sliderWidth = slider.offsetWidth;
+        const thumbWidth = 25; // Match thumb size
+        const thumbPosition = scrollPercentage * (sliderWidth - thumbWidth);
 
-      const fillPercentage = scrollPercentage * 100;
-
-      slider.style.background = `linear-gradient(to bottom, #F57C00 ${fillPercentage}%, #E4D9BA ${fillPercentage}%)`;
+        slider.style.setProperty("--thumb-left", `${thumbPosition}px`);
+        slider.style.background = `linear-gradient(to right, #F57C00 ${
+          scrollPercentage * 100
+        }%, #E4D9BA ${scrollPercentage * 100}%)`;
+      }
     };
 
-    cardsContainer.addEventListener("scroll", updateSliderPosition);
+    const handleScroll = () => {
+      requestAnimationFrame(updateSliderPosition);
+    };
 
+    // Handle resize to switch between modes
+    const handleResize = () => {
+      requestAnimationFrame(updateSliderPosition);
+    };
+
+    cardsContainer.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    // Initial position
     updateSliderPosition();
 
     return () => {
-      cardsContainer.removeEventListener("scroll", updateSliderPosition);
+      cardsContainer.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <section className="timeline-container" id='timeline'>
+    <section className="timeline-container" id="timeline">
       <div className="timeline-heading">
         <img
           src="/pics/timeline.svg"
