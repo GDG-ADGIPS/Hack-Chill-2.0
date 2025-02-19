@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
 
 .timeline-container {
-  background-image: url("pics/timelinebg.png");
-  background-size: cover;
+  /* background-image: url("pics/timelinebg.png"); */
+  /* background-size: cover; */
   /* background-repeat: no-repeat; */
   min-height: 100vh;
   padding-top: 50px;

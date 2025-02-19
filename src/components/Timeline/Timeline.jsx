@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import "./Timeline.css";
+import Timelinebg from "/pics/timelinebg.svg";
 
 const Timeline = () => {
+  const style = {
+    backgroundImage: `url(${Timelinebg})`,
+  };
   const sliderRef = useRef(null);
   const cardsContainerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -77,7 +81,7 @@ const Timeline = () => {
   }, [isDragging, startY, startScrollTop]);
 
   return (
-    <section className="timeline-container" id="timeline">
+    <section className="timeline-container" style={style} id="timeline">
       <div className="timeline-heading container">
         <img
           src="/pics/timeline.svg"
