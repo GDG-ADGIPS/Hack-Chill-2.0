@@ -78,7 +78,7 @@ const Timeline = () => {
 
   return (
     <section className="timeline-container" id="timeline">
-      <div className="timeline-heading">
+      <div className="timeline-heading container">
         <img
           src="/pics/timeline.svg"
           alt="Timeline Heading"
