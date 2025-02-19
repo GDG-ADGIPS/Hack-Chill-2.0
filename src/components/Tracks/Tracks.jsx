@@ -1,9 +1,8 @@
-import React from "react";
 import "./Tracks.css";
 
 const Tracks = () => {
   return (
-    <div className="tracks-container" id="tracks">
+    <div className="tracks-container container" id="tracks">
       {/* SVG Header */}
       <div className="tracks-header">
         {/* Replace this with the SVG import */}
