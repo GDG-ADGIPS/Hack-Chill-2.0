@@ -22,6 +22,7 @@ const Prizes = () => {
             ease:"bounce",
             rotate: 0,
              scrollTrigger: {
+                // markers:true,
                 trigger:"#frames",
                 start: "center 70%",
                 

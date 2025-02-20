@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 import Navbar from "./components/Navbar/Navbar";
 import Tracks from "./components/Tracks/Tracks";
 import Partners from "./components/Partners/Partners";
@@ -9,7 +11,8 @@ import About from "./components/About/About";
 import Timeline from "./components/Timeline/Timeline";
 import Prizes from "./components/Prizes/Prizes";
 import Footer from "./components/Footer/Footer";
-
+import Team from "./components/Team/Team";
+// gsap.registerPlugin(ScrollTrigger)
 function App() {
   useEffect(() => {
     // Inject Devfolio script dynamically
@@ -43,6 +46,7 @@ function App() {
       <Herosection />
       <About />
       <Tracks />
+      <Team/>
       <Timeline />
       <Partners />
       <Prizes />
