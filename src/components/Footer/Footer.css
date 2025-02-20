@@ -189,6 +189,10 @@ a:hover {
   margin-right: 16px;
 }
 
+.beach-mascot, .honeybee, .mobile-mascot-image, .mobile-footer-links, .mobile-signup-section{
+  display: none;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -199,6 +203,42 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .footer{
+    position: relative;
+  }
+
+  .about-section{
+    position: relative;
+  }
+
+  .contact-section{
+    position: relative;
+  }
+
+  .honeybee{
+    display: inline;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-section .honeybee{
+    top: -1.3rem;
+    right: 9rem;
+  }
+
+  .contact-section .honeybee{
+    top: -1.3rem;
+    right: 6rem;
+  }
+
+  .beach-mascot{
+    display: inline;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
   .main-heading {
     font-size: 48px;
   }
@@ -209,5 +249,46 @@ a:hover {
 
   .footer-content {
     padding: 24px 16px;
+  }
+
+  .footer-hidden{
+    display: none;
+  }
+
+  .mobile-mascot-image{
+    display: flex;
+    justify-content: center;
+    margin: -2rem 0;
+  }
+
+  .mobile-mascot-image img{
+    position: absolute;
+    transform: translateY(-30%);
+    height: 250px;
+    width: 250px;
+  }
+
+  .social-links{
+    display: none;
+  }
+
+  .mobile-footer-links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .signup-section{
+    text-align: center;
+  }
+
+  .contact-section{
+    padding-bottom: 3rem;
+  }
+
+  .mobile-view-container{
+    background-color: #3D1C12;
+    margin: -2rem -1.5rem -4rem -1.5rem;
+    padding: 2rem 2rem;
+    padding-top: 10rem;
   }
 }

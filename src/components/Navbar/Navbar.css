@@ -70,6 +70,7 @@ body {
   .navbar {
     flex-wrap: wrap;
     padding: 1rem 0.5rem;
+    width: 100vw;
   }
   .brand {
     font-size: 1.5rem;
