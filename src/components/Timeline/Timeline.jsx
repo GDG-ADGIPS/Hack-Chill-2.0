@@ -14,7 +14,7 @@ const Timeline = () => {
           cardsContainer.scrollTop /
           (cardsContainer.scrollHeight - cardsContainer.clientHeight);
         const thumbPosition =
-          scrollPercentage * (cardsContainer.clientHeight - 40);
+          scrollPercentage * (cardsContainer.clientHeight - 0);
         slider.style.setProperty("--thumb-top", `${thumbPosition}px`);
         slider.style.background = `linear-gradient(to bottom, #F57C00 ${
           scrollPercentage * 100
