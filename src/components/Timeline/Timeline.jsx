@@ -17,17 +17,33 @@ const Timeline = () => {
     const cardsContainer = cardsContainerRef.current;
 
     const updateSliderPosition = () => {
-      const scrollPercentage =
-        cardsContainer.scrollTop /
-        (cardsContainer.scrollHeight - cardsContainer.clientHeight);
-      const thumbPosition =
-        scrollPercentage * (cardsContainer.clientHeight - 50); // Adjust for thumb height
-      slider.style.setProperty("--thumb-top", `${thumbPosition}px`);
+      if (window.innerWidth > 768) {
+        // Vertical scroll logic
+        const scrollPercentage =
+          cardsContainer.scrollTop /
+          (cardsContainer.scrollHeight - cardsContainer.clientHeight);
+        const thumbPosition =
+          scrollPercentage * (cardsContainer.clientHeight - 0);
+        slider.style.setProperty("--thumb-top", `${thumbPosition}px`);
+        slider.style.background = `linear-gradient(to bottom, #F57C00 ${
+          scrollPercentage * 100
+        }%, #E4D9BA ${scrollPercentage * 100}%)`;
+      } else {
+        // Horizontal scroll logic
+        const scrollPercentage =
+          cardsContainer.scrollLeft /
+          (cardsContainer.scrollWidth - cardsContainer.clientWidth);
 
-      // Add yellow color progress effect
-      slider.style.background = `linear-gradient(to bottom, #F57C00 ${
-        scrollPercentage * 100
-      }%, #E4D9BA ${scrollPercentage * 100}%)`;
+        // Use slider's width instead of container's
+        const sliderWidth = slider.offsetWidth;
+        const thumbWidth = 25; // Match thumb size
+        const thumbPosition = scrollPercentage * (sliderWidth - thumbWidth);
+
+        slider.style.setProperty("--thumb-left", `${thumbPosition}px`);
+        slider.style.background = `linear-gradient(to right, #F57C00 ${
+          scrollPercentage * 100
+        }%, #E4D9BA ${scrollPercentage * 100}%)`;
+      }
     };
 
     const handleScroll = () => {
