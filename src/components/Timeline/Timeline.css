@@ -92,7 +92,7 @@
 .custom-slider {
   position: absolute;
   right: 20px;
-  top: -30px;
+  top: 0;
   width: 30px;
   height: 70vh;
   margin-top: 220px;
@@ -108,7 +108,7 @@
 .custom-slider::before {
   content: "";
   position: absolute;
-  top: var(--thumb-top,0);
+  top: var(--thumb-top, 0);
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
