@@ -1,5 +1,7 @@
 .hero-section {
-  background: url("/pics/hero-background.svg") repeat center center/cover;
+  background-color: #ffe4d6;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   min-height: 100vh;
   margin-top: -20px;
@@ -12,7 +14,34 @@
   overflow-x: hidden;
   margin-bottom: 40px;
 }
+.hero-section::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background-image: linear-gradient(45deg, #ffcdb2 25%, transparent 25%),
+    linear-gradient(-45deg, #ffcdb2 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ffcdb2 75%),
+    linear-gradient(-45deg, transparent 75%, #ffcdb2 75%);
 
+  background-size: 120px 120px;
+  background-position: 0 0, 0 60px, 60px -60px, -60px 0px;
+  transform: rotate(5deg) scale(1.2);
+  transform-origin: center;
+  filter: url("#turbulence");
+
+  animation: movePattern 20s linear infinite;
+}
+@keyframes movePattern {
+  0% {
+    background-position: 0 0, 0 60px, 60px -60px, -60px 0px;
+  }
+  100% {
+    background-position: 120px 120px, 120px 180px, 180px 60px, 60px 120px;
+  }
+}
 .hero-section-heading {
   position: relative;
   text-align: center;
@@ -23,20 +52,7 @@
 .hero-section-heading-image2 {
   position: absolute;
   object-fit: contain;
-  /* animation: move 5s ease-in-out infinite; */
 }
-/* @keyframes move {
-  0% {
-    transform: translateY(10px);  
-  }
-  50% {
-    transform: translateX(10px); 
-  }
-  100% {
-    transform: translateY(10px);  
-  }
-  
-} */
 
 .hero-section-heading-image1 {
   top: -100px;
@@ -52,71 +68,80 @@
 }
 
 .hero-section-heading h1 {
-  font-size: clamp(2.5em, 10vw, 7em);
-  color: var(--brand-color);
+  font-size: clamp(7em, 10vw, 10em);
+  color: #e35734;
+  -webkit-text-stroke: 8px #750500;
   margin: 0;
   max-width: 100%;
   font-family: "StandieFont", sans-serif;
-}
-
-.hero-flower-images {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  margin-top: 20px;
+  text-shadow: -10px 10px #e35734;
+  text-wrap: wrap;
+  line-height: 80%;
   margin-bottom: 40px;
 }
-
-.flower-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 200px; */
+.countdown-container {
+  z-index: 1000;
 }
-
-.flower {
-  width: 100%;
-  height: auto;
-}
-
 .countdown {
-  position: absolute;
+  display: flex;
+  gap: 1em;
+}
+
+.time-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  aspect-ratio: 1;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border: 2px solid #4f291e;
+  border-radius: 5px;
+  font-family: "HyperFactos", sans-serif;
+  box-shadow: 4px 4px 0px #4f291e;
 }
 
-.countdown .number {
-  font-family: "BeehiveFont", sans-serif;
-  font-size: 5em;
-  color: #ffd700;
-  text-shadow: -2px 2px 0 #fb4511, 2px -2px 0 #fb4511, -2px -2px 0 #fb4511,
-    2px 2px 0 #fb4511, 3px 3px 0 #fb4511, 6px 6px 0 #d93c0d;
-}
-
-.countdown .label {
-  font-family: "Albert Sans", sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  /* color: #fff; */
+.time-label {
   color: var(--brand-color);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-top: -20px;
+  padding: 4px 16px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 2px 2px 0 0;
+}
+
+.time-value {
+  background: white;
+  padding: 8px 24px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "HyperFactos", italic;
+  color: var(--brand-color);
+}
+
+#days .time-label {
+  background-color: #e35734;
+  border-bottom: 2px solid #4f291e;
+}
+#hours .time-label {
+  background-color: #f2bf41;
+  border-bottom: 2px solid #4f291e;
+}
+#minutes .time-label {
+  background-color: #c17747;
+  border-bottom: 2px solid #4f291e;
+}
+#seconds .time-label {
+  background-color: #e4d9ba;
+  border-bottom: 2px solid #4f291e;
+}
+.hero-section-cta {
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 @media (max-width: 768px) {
   .hero-section-heading-image1,
   .hero-section-heading-image2 {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     top: -20px;
   }
 
@@ -128,15 +153,22 @@
     left: -5%;
   }
 
-  .flower-container {
-    width: 120px;
-  }
-
-  .countdown .number {
-    font-size: 1.8em;
-  }
-
   .countdown .label {
     font-size: 0.8em;
+  }
+  .countdown {
+    gap: 0.5em;
+  }
+  .time-label {
+    padding: 4px 1px;
+  }
+  .time-value {
+    padding: 8px 10px;
+  }
+  .sunflower-mascot {
+    display: none;
+  }
+  .cta-button {
+    display: none;
   }
 }
