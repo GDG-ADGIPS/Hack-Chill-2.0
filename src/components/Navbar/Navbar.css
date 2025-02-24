@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .navbar-logo {
@@ -27,6 +27,13 @@
   font-family: "StandieFont", sans-serif;
   font-size: 2rem;
   color: var(--brand-color);
+  /* -webkit-text-stroke: 1px #750500; */
+}
+.brand:hover {
+  cursor: pointer;
+  color: var(--brand-color);
+  -webkit-text-stroke: 1px #e35734;
+  text-shadow: -2px 2px #e35734;
 }
 
 .navbar-links {

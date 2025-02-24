@@ -46,7 +46,7 @@ function App() {
       <Herosection />
       <About />
       <Tracks />
-      <Team/>
+      <Team />
       <Timeline />
       <Partners />
       <Prizes />

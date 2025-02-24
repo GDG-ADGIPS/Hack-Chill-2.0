@@ -12,7 +12,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src="/pics/logo.svg" alt="Logo" className="logo" />
-        <span className="brand">Hack & Chill 2.0</span>
+        <a className="brand" href="/">
+          HACK&CHILL 2.0
+        </a>
       </div>
 
       <button className="menu-toggle" onClick={toggleMenu}>
