@@ -23,6 +23,11 @@
 @font-face {
   font-family: "HyperFactos";
   src: url("fonts/HyperFactos.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HyperFactosItalic";
   src: url("fonts/HyperFatosItalic.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
