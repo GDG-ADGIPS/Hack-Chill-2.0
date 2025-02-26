@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .tracks-header {
@@ -19,11 +20,14 @@
 }
 
 .tracks-cards-container {
+  align-items: center;
   display: flex;
-  justify-content: center;
-  gap: 0;
+  /* justify-content: center; */
+  gap: 0px;
+  max-width: 862px;
   position: relative;
-  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  height: 500px;
+  overflow-x: hidden;
 }
 
 /* Card Styles */
@@ -36,8 +40,9 @@
   padding: 30px;
   text-align: center;
   flex: 1;
+  min-width: 300px;
   max-width: 300px;
-  min-height: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +96,7 @@
   font-weight: bold;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .tracks-cards-container {
@@ -110,3 +116,4 @@
     margin-right: 0;
   }
 }
+ 
