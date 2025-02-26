@@ -1,0 +1,294 @@
+.footer {
+  background-color: #4f291e;
+  color: white;
+  /* height: 800px; */
+  /* font-family: Arial, sans-serif ; */
+}
+
+.footer-content {
+  padding: 48px 24px;
+}
+
+.header-section {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #644b4b; */
+}
+.header-section img {
+  width: 302px;
+  height: 326px;
+}
+
+.main-heading {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.1;
+  width: 950px;
+  margin-bottom: 24px;
+  /* margin-left: 48px; */
+  margin-top: 51px;
+  /* background-color: olive; */
+}
+
+.white-text {
+  color: white;
+}
+
+.red-text {
+  color: #e84b30;
+}
+
+.mascot {
+  width: 120px;
+  height: auto;
+}
+
+.info-sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  /* background-color: pink; */
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.info-sections p,
+a {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 22px;
+  transition: 0.1s ease-in-out;
+}
+.info-sections p:hover,
+a:hover {
+  color: #e35734;
+}
+
+.venue-section h2,
+.about-section h2,
+.contact-section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-family: "Grifter" sans-serif;
+  font-weight: 700;
+}
+
+.signup-section {
+  margin-top: 32px;
+}
+
+.signup-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.email-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #e84b30;
+  border: 2px solid #fac02e;
+  border-radius: 4px;
+  color: white;
+  padding-right: 40px;
+}
+.email-input:focus {
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.arrow-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.2s ease-in;
+}
+
+.arrow-container svg {
+  width: 20px;
+  height: 34px;
+  width: 34px;
+  border-radius: 4px;
+  background-color: #f2c041;
+  color: #e35734;
+}
+
+.arrow-container:hover {
+  opacity: 1;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section li,
+.contact-section p {
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-link {
+  height: 48px;
+  width: 338px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26px;
+  padding: 16px;
+  border: 2px solid #e84b30;
+  border-radius: 5px;
+  color: #e35734;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: #e84b30;
+  color: white;
+}
+
+.marquee-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: hidden;
+  padding: 16px 0;
+  background-color: #e2d8be;
+  color: black;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 35s linear infinite;
+}
+
+.marquee-content span {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.beach-mascot, .honeybee, .mobile-mascot-image, .mobile-footer-links, .mobile-signup-section{
+  display: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer{
+    position: relative;
+  }
+
+  .about-section{
+    position: relative;
+  }
+
+  .contact-section{
+    position: relative;
+  }
+
+  .honeybee{
+    display: inline;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-section .honeybee{
+    top: -1.3rem;
+    right: 9rem;
+  }
+
+  .contact-section .honeybee{
+    top: -1.3rem;
+    right: 6rem;
+  }
+
+  .beach-mascot{
+    display: inline;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+  }
+
+  .info-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    padding: 24px 16px;
+  }
+
+  .footer-hidden{
+    display: none;
+  }
+
+  .mobile-mascot-image{
+    display: flex;
+    justify-content: center;
+    margin: -2rem 0;
+  }
+
+  .mobile-mascot-image img{
+    position: absolute;
+    transform: translateY(-30%);
+    height: 250px;
+    width: 250px;
+  }
+
+  .social-links{
+    display: none;
+  }
+
+  .mobile-footer-links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .signup-section{
+    text-align: center;
+  }
+
+  .contact-section{
+    padding-bottom: 3rem;
+  }
+
+  .mobile-view-container{
+    background-color: #3D1C12;
+    margin: -2rem -1.5rem -4rem -1.5rem;
+    padding: 2rem 2rem;
+    padding-top: 10rem;
+  }
+}

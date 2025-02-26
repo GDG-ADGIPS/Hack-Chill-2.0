@@ -14,6 +14,20 @@
   font-family: "BeehiveFont";
   src: url("/fonts/HexGirlfriendRegular-KPpA.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Grifter";
+  src: url("fonts/GRIFTER.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HyperFactos";
+  src: url("fonts/HyperFactos.otf") format("opentype");
+  src: url("fonts/HyperFatosItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg-color: #e4d9ba;
   --brand-color: #4f291e;
