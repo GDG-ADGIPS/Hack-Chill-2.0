@@ -8,6 +8,13 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -23,14 +30,10 @@ const Navbar = () => {
 
       <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
         <li>
-          <a href="#" className="nav-link">
-            ABOUT
-          </a>
+          <button className="nav-link" onClick={() => scrollToSection("about")}>ABOUT</button>
         </li>
         <li>
-          <a href="#" className="nav-link">
-            SPONSORS
-          </a>
+          <button className="nav-link" onClick={() => scrollToSection("sponsors")}>SPONSORS</button>
         </li>
         <li>
           <a href="mailto:dscadgitm@gmail.com" className="nav-link">
@@ -38,9 +41,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link">
-            FAQ
-          </a>
+          <button className="nav-link" onClick={() => scrollToSection("faq")}>FAQ</button>
         </li>
       </ul>
     </nav>

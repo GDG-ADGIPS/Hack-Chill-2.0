@@ -47,7 +47,7 @@ const Partners = () => {
   ];
 
   return (
-    <div className="partners-container container">
+    <div className="partners-container container" id="sponsors">
       <div className="partners-header">
         <img src="/pics/prevsponsors.svg" alt="" className="heading" />
       </div>
