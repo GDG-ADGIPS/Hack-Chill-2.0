@@ -8,40 +8,28 @@
 
 .team-header {
   position: sticky;
-  top: 20vh; 
-  /* padding-top: 100px; */
+  top: 20vh;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  /* background: rgba(255, 255, 255, 0.9); */
   width: 600px;
   padding: 1rem;
   border-radius: 10px;
-  z-index: -1; 
+  z-index: -1;
   margin-top: 100px;
   margin-bottom: 100px;
-  h1{
-    color: rgb(104, 39, 39);
-  }
-  p{
-    color: #5e2f2fe3;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
 }
-
 
 .grid-container {
   width: 90%;
-  height: 200vh;
+  height: 250vh; /* Increased height for additional row */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr); /* Added fourth row */
   gap: 20px;
   padding: 50px;
+  margin-bottom: 200px;
 }
-
 
 .grid-item {
   display: flex;
@@ -51,12 +39,12 @@
   /* width:30vw; */
 }
 
-
 .grid-item img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  filter: grayscale(70%);
 }
 
 .details {
@@ -64,13 +52,13 @@
   padding: 10px;
   border-radius: 8px;
   /* width: 250px; */
-  text-align: center; 
+  text-align: center;
 }
 
 .details h2 {
   font-size: 2rem;
   color: #491313;
-  font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 900;
 }
 
@@ -78,9 +66,8 @@
   font-size: 1.2rem;
   color: #3e1515;
   margin-bottom: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
-
 
 .details a {
   display: flex;
@@ -99,7 +86,7 @@
 }
 
 .linkedin-icon:hover {
-  color: #8b4513; 
+  color: #8b4513;
 }
 
 @media (max-width: 768px) {
@@ -116,7 +103,7 @@
     margin-bottom: 200px;
     position: relative;
   }
-  
+
   .team-header p {
     text-align: left;
     font-size: 1rem;
@@ -127,7 +114,7 @@
   .grid-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 20px;
     padding: 20px;
     height: auto;

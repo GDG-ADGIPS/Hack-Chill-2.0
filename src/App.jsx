@@ -46,10 +46,10 @@ function App() {
       <Herosection />
       <About />
       <Tracks />
-      <Team />
+      <Prizes />
       <Timeline />
       <Partners />
-      <Prizes />
+      <Team />
       <Faq />
       <Footer />
     </div>

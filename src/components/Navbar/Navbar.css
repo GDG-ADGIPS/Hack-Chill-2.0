@@ -50,7 +50,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   color: #6a4335;
-  opacity: 70%;
+  /* opacity: 70%; */
   transition: color 0.3s ease;
 }
 

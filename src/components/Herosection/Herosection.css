@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 .hero-section {
   background-color: #ffe4d6;
   position: relative;
@@ -92,24 +93,29 @@
   flex-direction: column;
   border: 2px solid #4f291e;
   border-radius: 5px;
-  font-family: "HyperFactos", sans-serif;
   box-shadow: 4px 4px 0px #4f291e;
 }
 
 .time-label {
   color: var(--brand-color);
-  padding: 4px 16px;
+  padding: 10px 24px;
   text-align: center;
-  font-size: 2rem;
+  font-family: "Orbitron", serif;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  /* font-size: 5px; */
   border-radius: 2px 2px 0 0;
 }
 
 .time-value {
   background: white;
-  padding: 8px 24px;
+  padding: 10px 0;
   text-align: center;
   font-size: 2rem;
-  font-family: "HyperFactos", italic;
+  font-family: "Orbitron", serif;
+  font-style: oblique;
+  font-weight: 1000;
+
   color: var(--brand-color);
 }
 
@@ -135,6 +141,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -160,7 +168,8 @@
     gap: 0.5em;
   }
   .time-label {
-    padding: 4px 1px;
+    padding: 4px 8px;
+    font-size: 1.2rem;
   }
   .time-value {
     padding: 8px 10px;

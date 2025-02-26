@@ -30,18 +30,29 @@ const Navbar = () => {
 
       <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
         <li>
-          <button className="nav-link" onClick={() => scrollToSection("about")}>ABOUT</button>
+          <button className="nav-link" onClick={() => scrollToSection("about")}>
+            ABOUT
+          </button>
         </li>
         <li>
-          <button className="nav-link" onClick={() => scrollToSection("sponsors")}>SPONSORS</button>
+          <button
+            className="nav-link"
+            onClick={() => scrollToSection("sponsors")}
+          >
+            SPONSORS
+          </button>
         </li>
         <li>
-          <a href="mailto:dscadgitm@gmail.com" className="nav-link">
-            CONTACT US
-          </a>
+          <button className="nav-link">
+            <a href="mailto:dscadgitm@gmail.com" className="nav-link">
+              CONTACT US
+            </a>
+          </button>
         </li>
         <li>
-          <button className="nav-link" onClick={() => scrollToSection("faq")}>FAQ</button>
+          <button className="nav-link" onClick={() => scrollToSection("faq")}>
+            FAQ
+          </button>
         </li>
       </ul>
     </nav>
