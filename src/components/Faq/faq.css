@@ -6,13 +6,21 @@
   background-color: #e4d9ba;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  min-height: 50vh;
+  min-height: 100vh;
+  background-color: #6a4335;
+  background-image: url("/pics/timelinebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 /* Header Section */
 .faq-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +46,9 @@
 @media (min-width: 768px) {
   .faq-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .faq-header {
+    margin-bottom: 10rem;
   }
 }
 

@@ -54,8 +54,8 @@ const Herosection = () => {
         />
       </div>
 
-      <div className="countdown-container ">
-        <div className="countdown container">
+      <div className="countdown-container">
+        <div className="countdown container ">
           <div className="time-section" id="days">
             <div className="time-label">DAYS</div>
             <div className="time-value">{timeLeft.days}</div>

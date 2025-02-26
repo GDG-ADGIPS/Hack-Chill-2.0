@@ -37,6 +37,16 @@ const FAQ = () => {
       answer:
         "Each team can have up to 4 members. You can register as an individual or form a team as the team registration form is released, so stay tuned for further updates",
     },
+    {
+      question: "Do I need to have prior hackathon experience to participate?",
+      answer:
+        "Not at all! Hack & Chill 2.0 welcomes participants of all skill levels, from beginners to experienced hackers. There will be mentors and workshops to guide you throughout the event.",
+    },
+    {
+      question: "What should I bring to the hackathon?",
+      answer:
+        "Participants should bring their laptops, chargers, and any necessary peripherals. Additionally, carrying a valid student ID, comfortable clothing, and personal essentials like water bottles and snacks is recommended.",
+    },
   ];
 
   const [openIndex, setOpenIndex] = useState(-1);
@@ -46,7 +56,7 @@ const FAQ = () => {
   };
 
   return (
-    <div id="faq" className="faq-container container">
+    <div id="faq" className="faq-container ">
       <div className="faq-header">
         <img src="/pics/faq.svg" alt="FAQ" className="faq-image heading" />
       </div>
