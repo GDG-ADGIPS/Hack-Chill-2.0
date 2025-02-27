@@ -2,6 +2,22 @@ import "./About.css";
 const About = () => {
   return (
     <>
+      <div className="marquee-wrapper-hero">
+        <div className="marquee-container-hero marquee-top-hero">
+          <div className="marquee-content-hero">
+            {[...Array(50)].map((_, i) => (
+              <span key={i}>HACK&CHILL • हैक एंड चिल • </span>
+            ))}
+          </div>
+        </div>
+        <div className="marquee-container-hero marquee-bottom-hero">
+          <div className="marquee-content-hero">
+            {[...Array(50)].map((_, i) => (
+              <span key={i}>HACK&CHILL • हैक एंड चिल • </span>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="AboutUs container" id="about">
         <div className="aboutUS-heading">
           <img src="/pics/aboutus.svg" alt="" className="heading" />
