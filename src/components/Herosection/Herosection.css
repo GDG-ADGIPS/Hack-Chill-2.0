@@ -144,7 +144,17 @@
   align-items: center;
   margin-top: 50px;
 }
-
+.cta-button:hover {
+  animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 768px) {
   .hero-section-heading-image1,
   .hero-section-heading-image2 {
@@ -173,6 +183,9 @@
   }
   .time-value {
     padding: 8px 10px;
+  }
+  .hero-section-cta {
+    justify-content: center;
   }
   .sunflower-mascot {
     display: none;

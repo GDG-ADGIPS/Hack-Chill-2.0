@@ -37,8 +37,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+html {
   background-color: #e4d9ba;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1200px;
