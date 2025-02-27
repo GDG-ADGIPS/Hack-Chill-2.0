@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Register from "../Register/Register";
 import "./Herosection.css";
 import sunflower from "/pics/sunflower.png";
-import RegisterButton from "/pics/register-bg.svg";
+import RegisterButton from "/pics/register-btn.svg";
 const Herosection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

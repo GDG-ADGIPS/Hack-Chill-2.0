@@ -8,7 +8,7 @@
 
 .team-header {
   position: sticky;
-  top: 20vh;
+  top: 50vh;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -17,18 +17,18 @@
   border-radius: 10px;
   z-index: -1;
   margin-top: 100px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .grid-container {
   width: 90%;
-  height: 250vh; /* Increased height for additional row */
+  min-height: 100vh; /* Increased height for additional row */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr); /* Added fourth row */
   gap: 20px;
   padding: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 110px;
 }
 
 .grid-item {
@@ -100,7 +100,7 @@
     font-size: 1.5rem;
     top: 10vh;
     /* margin-top: 50px; */
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     position: relative;
   }
 
@@ -118,6 +118,7 @@
     gap: 20px;
     padding: 20px;
     height: auto;
+    margin-bottom: 0;
   }
 
   .grid-item {

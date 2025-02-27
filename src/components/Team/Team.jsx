@@ -15,7 +15,7 @@ const Team = () => {
             <h2>Ritika</h2>
             <h3>President</h3>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/ritika-budhiraja-"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,10 +61,10 @@ const Team = () => {
         <div className="grid-item">
           <img src="pics/sagar.jpeg" alt="Team Member" />
           <div className="details">
-            <h2>Sagar</h2>
+            <h2>Sagar Kumar Jha</h2>
             <h3>Managenment Lead</h3>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/sagar-kumar-jha-237405240/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,7 +80,7 @@ const Team = () => {
             <h2>Siddharth</h2>
             <h3>AI/ML Lead</h3>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/siddharth-upadhyay-b512a610b/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -112,7 +112,7 @@ const Team = () => {
             <h2>Kishan</h2>
             <h3>Creative Lead</h3>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/kishan-kumar-00822428b/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -128,7 +128,22 @@ const Team = () => {
             <h2>Divyansh</h2>
             <h3>Technical Lead</h3>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/divyansh-raj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="linkedin-icon" />
+            </a>
+          </div>
+        </div>
+        <div className="grid-item"></div>
+        <div className="grid-item">
+          <img src="pics/aaditya.jpeg" alt="Team Member" />
+          <div className="details">
+            <h2>Aaditya Sharma</h2>
+            <h3>Content Lead</h3>
+            <a
+              href="https://www.linkedin.com/in/aadityasharma1094?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
             >
