@@ -8,16 +8,12 @@
 
 .team-header {
   position: sticky;
+  width: 700px;
   top: 50vh;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 600px;
   padding: 1rem;
   border-radius: 10px;
-  z-index: -1;
+  /* z-index: -1; */
   margin-top: 100px;
-  /* margin-bottom: 100px; */
 }
 
 .grid-container {
