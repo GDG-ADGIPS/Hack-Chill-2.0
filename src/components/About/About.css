@@ -1,3 +1,6 @@
+.some {
+  overflow-x: hidden;
+}
 .AboutUs {
   min-height: 100vh;
 }
@@ -42,7 +45,7 @@
 }
 .marquee-wrapper-hero {
   position: relative;
-  margin-top: -6rem;
+  /* margin-top: -6rem; */
   /* margin: 4rem 0; */
   height: 120px; /* Increased height to accommodate rotated borders */
 }
@@ -57,9 +60,10 @@
   z-index: 1;
   overflow-x: hidden;
   padding: 1rem;
+  margin-top: 50px;
 }
 .marquee-top-hero {
-  top: -20px;
+  /* top: -20px; */
   transform: translateX(-50%) rotate(3deg);
 }
 
@@ -71,7 +75,7 @@
 .marquee-content-hero {
   display: inline-flex;
   white-space: nowrap;
-  animation: marquee 40s linear infinite;
+  animation: marquee 70s linear infinite;
   padding: 0 1rem; /* Add padding to prevent text clipping */
 }
 .marquee-content-hero span {
@@ -108,12 +112,12 @@
     font-size: 1rem;
   }
   .marquee-top-hero {
-    top: -3px;
+    top: -15px;
     transform: translateX(-50%) rotate(3deg);
   }
 
   .marquee-bottom-hero {
-    bottom: 50px;
+    bottom: 20px;
     transform: translateX(-50%) rotate(-7deg);
   }
 }
