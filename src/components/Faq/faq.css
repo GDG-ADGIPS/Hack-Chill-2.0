@@ -36,6 +36,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  align-items: start; /* Ensures each FAQ item aligns at the top */
 }
 .faq-question {
   font-family: "Albert Sans", sans-serif;
@@ -61,6 +62,9 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column; /* Ensures content inside stacks properly */
+  align-self: start; /* Prevents stretching due to grid */
 }
 
 .faq-item:hover {

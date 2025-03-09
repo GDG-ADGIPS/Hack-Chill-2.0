@@ -80,7 +80,9 @@ const Herosection = () => {
         <Register />
 
         <button className="cta-button">
-          <img src={RegisterButton} alt="" />
+          <a href="https://hackandchill-1.devfolio.co/">
+            <img src={RegisterButton} alt="" />
+          </a>
         </button>
       </div>
       <svg style={{ display: "none" }} xmlns="http://www.w3.org/2000/svg">

@@ -2,7 +2,7 @@
   background-color: #4f291e;
   color: white;
   /* height: 800px; */
-  /* font-family: Arial, sans-serif ; */
+  font-family: "StandieFont", sans-serif;
 }
 
 .footer-content {
@@ -189,7 +189,11 @@ a:hover {
   margin-right: 16px;
 }
 
-.beach-mascot, .honeybee, .mobile-mascot-image, .mobile-footer-links, .mobile-signup-section{
+.beach-mascot,
+.honeybee,
+.mobile-mascot-image,
+.mobile-footer-links,
+.mobile-signup-section {
   display: none;
 }
 
@@ -203,36 +207,36 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .footer{
+  .footer {
     position: relative;
   }
 
-  .about-section{
+  .about-section {
     position: relative;
   }
 
-  .contact-section{
+  .contact-section {
     position: relative;
   }
 
-  .honeybee{
+  .honeybee {
     display: inline;
     position: absolute;
     width: 80px;
     height: 80px;
   }
 
-  .about-section .honeybee{
+  .about-section .honeybee {
     top: -1.3rem;
     right: 9rem;
   }
 
-  .contact-section .honeybee{
+  .contact-section .honeybee {
     top: -1.3rem;
     right: 6rem;
   }
 
-  .beach-mascot{
+  .beach-mascot {
     display: inline;
     position: absolute;
     right: 0px;
@@ -251,42 +255,42 @@ a:hover {
     padding: 24px 16px;
   }
 
-  .footer-hidden{
+  .footer-hidden {
     display: none;
   }
 
-  .mobile-mascot-image{
+  .mobile-mascot-image {
     display: flex;
     justify-content: center;
     margin: -2rem 0;
   }
 
-  .mobile-mascot-image img{
+  .mobile-mascot-image img {
     position: absolute;
     transform: translateY(-30%);
     height: 250px;
     width: 250px;
   }
 
-  .social-links{
+  .social-links {
     display: none;
   }
 
-  .mobile-footer-links{
+  .mobile-footer-links {
     display: flex;
     justify-content: space-between;
   }
 
-  .signup-section{
+  .signup-section {
     text-align: center;
   }
 
-  .contact-section{
+  .contact-section {
     padding-bottom: 3rem;
   }
 
-  .mobile-view-container{
-    background-color: #3D1C12;
+  .mobile-view-container {
+    background-color: #3d1c12;
     margin: -2rem -1.5rem -4rem -1.5rem;
     padding: 2rem 2rem;
     padding-top: 10rem;

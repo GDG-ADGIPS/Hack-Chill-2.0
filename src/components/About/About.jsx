@@ -11,13 +11,13 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className="marquee-container-hero marquee-bottom-hero">
+          {/* <div className="marquee-container-hero marquee-bottom-hero">
             <div className="marquee-content-hero">
               {[...Array(50)].map((_, i) => (
                 <span key={i}>HACK&CHILL • हैक एंड चिल • </span>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="AboutUs container" id="about">
           <div className="aboutUS-heading">

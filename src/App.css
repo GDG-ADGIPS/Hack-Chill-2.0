@@ -29,7 +29,7 @@
 }
 
 :root {
-  --bg-color: #e4d9ba;
+  --bg-color: #ffede8;
   --brand-color: #4f291e;
 }
 * {
@@ -39,7 +39,7 @@
 }
 body,
 html {
-  background-color: #e4d9ba;
+  background-color: #ffede8;
   /* overflow-x: hidden; */
 }
 .container {
