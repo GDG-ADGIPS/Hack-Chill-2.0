@@ -90,16 +90,166 @@ const Timeline = () => {
         />
       </div>
       <div className="timeline-cards" ref={cardsContainerRef}>
-        {[...Array(8)].map((_, index) => (
-          <div className={`card card${index + 1}`} key={index}>
-            <div className="header">
-              <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
-              <h2>Event {index + 1}</h2>
-            </div>
-            <p>April {5 + index}, 2025</p>
+        <div className="card card1">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Registration Starts</h2>
           </div>
-        ))}
+          <p>March 1, 2025</p>
+        </div>
+
+        <div className="card card2">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Registration Ends</h2>
+          </div>
+          <p>March 15, 2025</p>
+        </div>
+
+        <div className="card card3">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - Inauguration</h2>
+          </div>
+          <p>March 20, 2025 | 8:00AM</p>
+        </div>
+
+        <div className="card card4">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - Hacking Starts</h2>
+          </div>
+          <p>March 20, 2025 | 9:00AM</p>
+        </div>
+
+        <div className="card card5">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - Breakfast</h2>
+          </div>
+          <p>March 20, 2025 | 10:00AM</p>
+        </div>
+
+        <div className="card card6">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - Mentoring</h2>
+          </div>
+          <p>March 20, 2025 | 12:00PM</p>
+        </div>
+
+        <div className="card card7">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - Lunch</h2>
+          </div>
+          <p>March 20, 2025 | 3:00PM</p>
+        </div>
+
+        <div className="card card8">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 1 - See off</h2>
+          </div>
+          <p>March 20, 2025 | 6:30PM</p>
+        </div>
+
+        <div className="card card3">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - Inauguration</h2>
+          </div>
+          <p>March 21, 2025 | 8:00AM</p>
+        </div>
+
+        <div className="card card4">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - Hacking Starts</h2>
+          </div>
+          <p>March 21, 2025 | 9:00AM</p>
+        </div>
+
+        <div className="card card5">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - Breakfast</h2>
+          </div>
+          <p>March 21, 2025 | 10:00AM</p>
+        </div>
+
+        <div className="card card6">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - Mentoring</h2>
+          </div>
+          <p>March 21, 2025 | 12:00PM</p>
+        </div>
+
+        <div className="card card7">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - Lunch</h2>
+          </div>
+          <p>March 21, 2025 | 3:00PM</p>
+        </div>
+
+        <div className="card card8">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 2 - See off</h2>
+          </div>
+          <p>March 21, 2025 | 6:30PM</p>
+        </div>
+        <div className="card card3">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Inauguration</h2>
+          </div>
+          <p>March 22, 2025 | 8:00AM</p>
+        </div>
+
+        <div className="card card4">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Hacking Starts</h2>
+          </div>
+          <p>March 22, 2025 | 9:00AM</p>
+        </div>
+
+        <div className="card card5">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Breakfast</h2>
+          </div>
+          <p>March 22, 2025 | 10:30AM</p>
+        </div>
+
+        <div className="card card6">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Mentoring</h2>
+          </div>
+          <p>March 22, 2025 | 12:00PM</p>
+        </div>
+
+        <div className="card card7">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Lunch</h2>
+          </div>
+          <p>March 22, 2025 | 3:00PM</p>
+        </div>
+
+        <div className="card card8">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Day 3 - Results and Winner Announcement</h2>
+          </div>
+          <p>March 22, 2025 | 4:30PM</p>
+        </div>
       </div>
+
       <div className="custom-slider" ref={sliderRef}></div>
     </section>
   );

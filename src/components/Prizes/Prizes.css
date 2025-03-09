@@ -1,142 +1,133 @@
-* {
-    font-family: "StandieFont";
+.prizes {
+  margin-bottom: 100px;
+  font-family: "Albert Sans", sans-serif;
+  padding: 20px;
 }
 
-#prizes {
-    color: #A74925;
-    font-size: clamp(40px, 8vw, 90px);
-    background-color: #e4d9ba;
-    min-height: 140vh;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    padding: 1rem;
-    overflow-x: hidden;
-    margin-top: 40px;
+.prizes-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.prizes-heading {
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem auto;
+.container-prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.prizes-heading img {
-    max-width: 90%;
-    height: auto;
+.card-prize {
+  background: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  transition: transform 0.9s ease-in-out, opacity 0.7s ease-in-out;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/1;
 }
 
-.frames {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
+.card-prize h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.frames img {
-    max-width: 100%;
-    height: auto;
-    transform-origin: center;
+.card-prize h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: bolder;
 }
 
-.frames2 {
-    padding: 2rem 1rem;
-    display: flex;
+.card-prize h3 {
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Initial state - peeking effect */
+.card-prize:nth-child(1) {
+  background: #f2bf41;
+  transform: translateX(100px) skew(10deg) scale(0.9);
+  opacity: 0.8;
+  color: #4f291e;
+}
+
+.card-prize:nth-child(2) {
+  background: #e35734;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.card-prize:nth-child(3) {
+  background: #5fa19e;
+  color: #4f291e;
+  transform: translateX(-100px) skew(-10deg) scale(0.9);
+  /* z-index: ; */
+  opacity: 0.8;
+}
+
+/* Spread effect when scrolled into view */
+.container-prize.visible .card-prize:nth-child(1) {
+  transform: translateX(-5px) scale(1);
+  opacity: 1;
+}
+
+.container-prize.visible .card-prize:nth-child(2) {
+  transform: translateX(0px) scale(1);
+}
+
+.container-prize.visible .card-prize:nth-child(3) {
+  transform: translateX(5px) scale(1);
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container-prize {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    margin-top: 4rem;
-    position: relative;
+  }
+  .card-prize {
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }
 
-.frames2 img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    margin-bottom: 2rem;
+@media (max-width: 768px) {
+  .card-prize {
+    max-width: 300px;
+    padding: 15px;
+  }
+  .card-prize h1 {
+    font-size: 1.5rem;
+  }
+  .card-prize h2 {
+    font-size: 2rem;
+  }
+  .card-prize h3 {
+    font-size: medium;
+  }
 }
 
-.frames2 img:nth-child(1) {
-    z-index: 1;
-    padding-bottom: 1rem;
-}
-
-.frames2 img:nth-child(2) {
-    z-index: 2;
-    margin-top: -5rem;
-    padding-bottom: 1rem;
-}
-
-.frames2 img:nth-child(3) {
-    z-index: 3;
-    margin-top: -5rem;
-    padding-bottom: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    #prizes {
-        padding: 2rem 1rem;
-    }
-
-    .frames {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .frames img {
-        width: 200px;
-        height: auto;
-        position: unset !important;
-        transform: none ;
-    }
-
-    .frames img:nth-child(2) {
-        width: 250px;
-        order: -1;
-    }
-
-    .frames2 {
-        margin-top: 3rem;
-        padding: 1rem;
-        gap: 0;
-    }
-
-    .frames2 img {
-        position: static !important;
-        margin-bottom: -15px;
-        padding-bottom: 0;
-        margin-top: 0;
-    }
-
-    .frames2 img:nth-child(2),
-    .frames2 img:nth-child(3) {
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .prizes-heading {
-        height: 100px;
-    }
-   
-    .frames img {
-        width: 250px;
-    }
-
-    .frames2 {
-       margin: 0;
-       gap: 1rem;
-    }
-
-   .frames2 img{
-    width: 90vw;
-    transform: scale(1.1);
-      }
+@media (max-width: 480px) {
+  .card-prize {
+    /* max-width: 250px; */
+    padding: 10px;
+  }
+  .card-prize h1 {
+    font-size: 1.2rem;
+  }
+  .card-prize h2 {
+    font-size: 1.5rem;
+  }
+  .card-prize h3 {
+    font-size: small;
+  }
 }

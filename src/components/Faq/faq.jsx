@@ -56,19 +56,18 @@ const FAQ = () => {
   };
 
   return (
-    <div id="faq" className="faq-container ">
+    <div id="faq" className="faq-container">
       <div className="faq-header">
         <img src="/pics/faq.svg" alt="FAQ" className="faq-image heading" />
       </div>
 
       <div className="faq-content">
         {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="faq-item"
-            onClick={() => toggleAccordion(index)}
-          >
-            <div className="faq-question">
+          <div key={index} className="faq-item">
+            <div
+              className="faq-question"
+              onClick={() => toggleAccordion(index)}
+            >
               {faq.question}
               <span className="faq-icon">
                 {openIndex === index ? "-" : "+"}
