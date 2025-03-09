@@ -32,7 +32,7 @@ const Prizes = () => {
       </div>
       <div
         ref={containerRef}
-        className={container-prize ${isVisible ? "visible" : ""}}
+        className={`container-prize ${isVisible ? "visible" : ""}`}
       >
         <div className="card-prize">
           <h1>Tech Exposure</h1>
