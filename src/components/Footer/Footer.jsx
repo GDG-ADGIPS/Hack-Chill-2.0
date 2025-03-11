@@ -2,7 +2,6 @@ import { ArrowUpRight } from "lucide-react";
 import "./Footer.css";
 
 export default function Footer() {
-
   return (
     <div className="footer">
       <div className="footer-content">
@@ -24,7 +23,7 @@ export default function Footer() {
               Shastri Park, NEW DELHI
             </p>
 
-            <div className="signup-section">
+            {/* <div className="signup-section">
               <h3>BE A PART OF THE FAM!</h3>
               <div className="email-input-container">
                 <input
@@ -36,12 +35,16 @@ export default function Footer() {
                   <ArrowUpRight />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="about-section">
             <h2>ABOUT US</h2>
-            <img src="/pics/honeybee.png" alt="honey-bee" className="honeybee"/>
+            <img
+              src="/pics/honeybee.png"
+              alt="honey-bee"
+              className="honeybee"
+            />
             <ul>
               <li>
                 <a href="">About Hack&Chill</a>
@@ -62,26 +65,36 @@ export default function Footer() {
                 <a href="">Blogs</a>
               </li>
             </ul>
-            <img src="/pics/beach-mascot.svg" alt="mascot-chilling" className="beach-mascot"/>
+            <img
+              src="/pics/beach-mascot.svg"
+              alt="mascot-chilling"
+              className="beach-mascot"
+            />
           </div>
 
           <div className="contact-section">
             <h2>LET TALK FAM</h2>
-            <img src="/pics/honeybee.png" alt="honey-bee" className="honeybee"/>
+            <img
+              src="/pics/honeybee.png"
+              alt="honey-bee"
+              className="honeybee"
+            />
+            <p>Questions? Comments?</p>
+            <p>Brand recs? Email us!</p>
             <p>
-              <a href="">Questions? Comments?</a>
-            </p>
-            <p>
-              <a href="">Brand recs? Email us!</a>
-            </p>
-            <p>
-              <a href="">dscadgitmdelhi@gmail.com</a>
+              <a href="mailto:dscadgitmdelhi@gmail.com">
+                dscadgitmdelhi@gmail.com
+              </a>
             </p>
             <br />
             <div className="call-container">
               <p>Shoot us a text!</p>
-              <a href="tel:9296000784" className="call-number">
-                929-6000-PUG
+              <a
+                href="http://wa.me/9625382247"
+                target="_blank"
+                className="call-number"
+              >
+                9625382247
               </a>
             </div>
           </div>
@@ -91,19 +104,22 @@ export default function Footer() {
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-link">
+            <a
+              href="https://www.instagram.com/hacknchill_2.0/"
+              className="social-link"
+            >
               <span>INSTAGRAM</span>
               <ArrowUpRight />
             </a>
-            <a href="#" className="social-link">
+            <a href="https://linktr.ee/hacknchill2.0" className="social-link">
               <span>LINKEDIN</span>
               <ArrowUpRight />
             </a>
-            <a href="#" className="social-link">
+            <a href="https://linktr.ee/hacknchill2.0" className="social-link">
               <span>H&C COMMUNITY</span>
               <ArrowUpRight />
             </a>
-            <a href="#" className="social-link">
+            <a href="https://linktr.ee/hacknchill2.0" className="social-link">
               <span>H&C ON X</span>
               <ArrowUpRight />
             </a>
@@ -111,16 +127,28 @@ export default function Footer() {
 
           <div className="mobile-view-container">
             <div className="mobile-footer-links">
-              <a href="#" className="mobile-social-link">
+              <a
+                href="https://linktr.ee/hacknchill2.0"
+                className="mobile-social-link"
+              >
                 <img src="/pics/footer-icon-3.svg" alt="footer-link" />
               </a>
-              <a href="#" className="mobile-social-link">
+              <a
+                href="https://linktr.ee/hacknchill2.0"
+                className="mobile-social-link"
+              >
                 <img src="/pics/footer-icon-2.svg" alt="footer-link" />
               </a>
-              <a href="#" className="mobile-social-link">
+              <a
+                href="https://linktr.ee/hacknchill2.0"
+                className="mobile-social-link"
+              >
                 <img src="/pics/footer-icon-4.svg" alt="footer-link" />
               </a>
-              <a href="#" className="mobile-social-link">
+              <a
+                href="https://linktr.ee/hacknchill2.0"
+                className="mobile-social-link"
+              >
                 <img src="/pics/footer-icon-1.svg" alt="footer-link" />
               </a>
             </div>
@@ -137,9 +165,7 @@ export default function Footer() {
                   <ArrowUpRight />
                 </div>
               </div>
-          </div>
-
-
+            </div>
           </div>
         </div>
       </div>

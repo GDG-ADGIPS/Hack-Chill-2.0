@@ -7,7 +7,7 @@
 }
 
 .team-header {
-  position: sticky;
+  /* position: sticky; */
   width: 700px;
   top: 45vh;
   padding: 1rem;
