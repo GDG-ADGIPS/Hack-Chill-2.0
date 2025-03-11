@@ -39,19 +39,13 @@ const Tracks = () => {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check if device is mobile
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    // Initial check
     checkMobile();
-
-    // Add event listener for window resize
     window.addEventListener("resize", checkMobile);
-
-    // Cleanup
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
@@ -59,13 +53,11 @@ const Tracks = () => {
     setIndex((prev) => (prev + 1) % tracks.length);
   };
 
-  // Auto-scroll every 3 seconds (only for desktop)
   useEffect(() => {
     if (!isMobile) {
       const interval = setInterval(() => {
         nextTrack();
       }, 3000);
-
       return () => clearInterval(interval);
     }
   }, [isMobile]);
@@ -81,7 +73,6 @@ const Tracks = () => {
       </div>
 
       {isMobile ? (
-        // Mobile view: all cards in a column
         <div className="tracks-mobile-view">
           {tracks.map((track) => (
             <div key={track.id} className="track-card mobile-card">
@@ -92,27 +83,18 @@ const Tracks = () => {
           ))}
         </div>
       ) : (
-        // Desktop view: carousel
         <div className="tracks-carousel" onClick={nextTrack}>
           <AnimatePresence>
-            {[...Array(3)].map((_, i) => {
+            {[0, 1, 2].map((i) => {
               const trackIndex = (index + i) % tracks.length;
-              let position = "left"; // Default to left
-
-              if (i === 1) position = "center";
-              else if (i === 2) position = "right";
-
               return (
                 <motion.div
                   key={tracks[trackIndex].id}
-                  className={`track-card ${position}`}
+                  className="track-card"
                   initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{
-                    opacity: 1,
-                    scale: position === "center" ? 1.15 : 1,
-                  }}
+                  animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.5 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ duration: 0.5 }}
                 >
                   <img
                     src={tracks[trackIndex].img}
