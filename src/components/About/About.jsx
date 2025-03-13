@@ -24,7 +24,7 @@ const About = () => {
             <img src="/pics/aboutus.svg" alt="" className="heading" />
           </div>
           <div className="aboutus-content">
-            <img src="/pics/HNC1.JPG" alt="" />
+            <img src="/pics/aboutus.png" alt="" />
             <p>
               Hack & Chill 2.0 is a 36-hour hackathon designed to spark
               creativity, foster collaboration among participants, and bring
