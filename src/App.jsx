@@ -12,6 +12,7 @@ import Timeline from "./components/Timeline/Timeline";
 import Prizes from "./components/Prizes/Prizes";
 import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Team";
+import Sponsors from "./components/Sponsors/Sponsors";
 // gsap.registerPlugin(ScrollTrigger)
 function App() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
       <Tracks />
       <Prizes />
       <Timeline />
+      <Sponsors/>
       <Partners />
       <Team />
       <Faq />

@@ -77,7 +77,7 @@ const Herosection = () => {
 
       <div className="hero-section-cta">
         <img src={sunflower} alt="" className="sunflower-mascot" />
-        <Register />
+        {/* <Register /> */}
 
         <button className="cta-button">
           <a href="https://hackandchill-1.devfolio.co/">
