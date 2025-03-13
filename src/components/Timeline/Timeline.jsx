@@ -105,6 +105,27 @@ const Timeline = () => {
           </div>
           <p>March 15, 2025</p>
         </div>
+        <div className="card card2">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Presentation Submission Round Start</h2>
+          </div>
+          <p>March 13, 2025</p>
+        </div>
+        <div className="card card2">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Presentation Submission Round End</h2>
+          </div>
+          <p>March 16, 2025</p>
+        </div>
+        <div className="card card2">
+          <div className="header">
+            <img src="/pics/calendar-fold.png" alt="Calendar Icon" />
+            <h2>Final Shortlisting of Participants</h2>
+          </div>
+          <p>March 17, 2025</p>
+        </div>
 
         <div className="card card3">
           <div className="header">
