@@ -74,6 +74,7 @@
   -webkit-text-stroke: 8px #750500;
   margin: 0;
   max-width: 100%;
+  /* width: 200px; */
   font-family: "StandieFont", sans-serif;
   text-shadow: -10px 10px #e35734;
   text-wrap: wrap;
@@ -192,6 +193,6 @@
     display: none;
   }
   .cta-button {
-    display: none;
+    width: 50%;
   }
 }
