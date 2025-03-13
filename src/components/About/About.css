@@ -30,10 +30,10 @@
 }
 .aboutus-content img {
   width: 50%;
-  filter: grayscale(90%);
+  /* filter: grayscale(90%); */
   border-radius: 25px;
-  border: 4px solid black;
-  box-shadow: 10px 10px var(--brand-color);
+  /* border: 4px solid black; */
+  /* box-shadow: 10px 10px var(--brand-color); */
 }
 .aboutus-content p {
   font-family: "Inter", sans-serif;
