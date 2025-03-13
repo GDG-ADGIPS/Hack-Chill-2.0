@@ -43,9 +43,20 @@ const FAQ = () => {
         "Not at all! Hack & Chill 2.0 welcomes participants of all skill levels, from beginners to experienced hackers. There will be mentors and workshops to guide you throughout the event.",
     },
     {
+      question: "What is the final date for PPT submission?",
+      answer:
+        "The final deadline for PPT submission is 16th March 2025. Make sure to submit your PPT before this date to be considered for the next round.",
+    },
+    {
       question: "What should I bring to the hackathon?",
       answer:
         "Participants should bring their laptops, chargers, and any necessary peripherals. Additionally, carrying a valid student ID, comfortable clothing, and personal essentials like water bottles and snacks is recommended.",
+    },
+    {
+      question:
+        "When will the final callback letters be sent, and how will participants receive them?",
+      answer:
+        "The final callback letters will be distributed on 17th March 2025 via our official email dscadgitm@gmail.com. Keep an eye on your inbox for updates!",
     },
   ];
 
