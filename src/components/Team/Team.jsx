@@ -25,7 +25,7 @@ const Team = () => {
         <div className="grid-item"></div>
         <div className="grid-item"></div>
         <div className="grid-item">
-          <img src="pics/shivansh.jpeg" alt="Team Member" />
+          <img src="pics/shivansh.jpg" alt="Team Member" />
           <div className="details">
             <h2>Shivansh Sharma</h2>
             <a
