@@ -4,19 +4,19 @@ import "./faq.css";
 const FAQ = () => {
   const faqs = [
     {
-      question: "When and where will Hack & Chill 2.0 take place?",
+      question: "When and where will Hack & Chill 3.0 take place?",
       answer:
-        "Hack & Chill 2.0 is scheduled for 20-22nd March 2025 and will take place at ADGIPS Delhi.",
+        "Hack & Chill 3.0 is scheduled for 20-22nd March 2026 and will take place at ADGIPS Delhi.",
     },
     {
-      question: "What is the duration of Hack & Chill 2.0?",
+      question: "What is the duration of Hack & Chill 3.0?",
       answer:
-        "Hack & Chill 2.0 is a 48-hour hackathon, packed with coding, workshops, and exciting activities.",
+        "Hack & Chill 3.0 is a 48-hour hackathon, packed with coding, workshops, and exciting activities.",
     },
     {
       question: "Will there be refreshments zones?",
       answer:
-        "Yes! Hack & Chill 2.0 ensures participants have a balanced experience with designated refreshment areas to relax and socialize.",
+        "Yes! Hack & Chill 3.0 ensures participants have a balanced experience with designated refreshment areas to relax and socialize.",
     },
     {
       question: "Are there any prizes?",
@@ -40,12 +40,12 @@ const FAQ = () => {
     {
       question: "Do I need to have prior hackathon experience to participate?",
       answer:
-        "Not at all! Hack & Chill 2.0 welcomes participants of all skill levels, from beginners to experienced hackers. There will be mentors and workshops to guide you throughout the event.",
+        "Not at all! Hack & Chill 3.0 welcomes participants of all skill levels, from beginners to experienced hackers. There will be mentors and workshops to guide you throughout the event.",
     },
     {
       question: "What is the final date for PPT submission?",
       answer:
-        "The final deadline for PPT submission is 16th March 2025. Make sure to submit your PPT before this date to be considered for the next round.",
+        "The final deadline for PPT submission is 16th March 2026. Make sure to submit your PPT before this date to be considered for the next round.",
     },
     {
       question: "What should I bring to the hackathon?",
@@ -56,7 +56,7 @@ const FAQ = () => {
       question:
         "When will the final callback letters be sent, and how will participants receive them?",
       answer:
-        "The final callback letters will be distributed on 17th March 2025 via our official email dscadgitm@gmail.com. Keep an eye on your inbox for updates!",
+        "The final callback letters will be distributed on 17th March 2026 via our official email dscadgitm@gmail.com. Keep an eye on your inbox for updates!",
     },
   ];
 

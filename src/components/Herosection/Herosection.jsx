@@ -41,7 +41,7 @@ const Herosection = () => {
   return (
     <div className="hero-section">
       <div className="hero-section-heading">
-        <h1>HACK & CHILL 2.0</h1>
+        <h1>HACK & CHILL 3.0</h1>
         <img
           src="/pics/honeybee.png"
           alt="Honeybee decoration"
@@ -54,7 +54,8 @@ const Herosection = () => {
         />
       </div>
 
-      <div className="countdown-container">
+      {/* Count down to March 21-23, 2025 */}
+      {/* <div className="countdown-container">
         <div className="countdown container ">
           <div className="time-section" id="days">
             <div className="time-label">DAYS</div>
@@ -73,7 +74,7 @@ const Herosection = () => {
             <div className="time-value">{timeLeft.seconds}</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="hero-section-cta">
         <img src={sunflower} alt="" className="sunflower-mascot" />
