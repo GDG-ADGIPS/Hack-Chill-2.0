@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src="/pics/logo.svg" alt="Logo" className="logo" />
         <a className="brand" href="/">
-          HACK&CHILL 2.0
+          HACK&CHILL 3.0
         </a>
       </div>
 
