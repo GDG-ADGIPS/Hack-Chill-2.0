@@ -84,15 +84,14 @@ const Herosection = () => {
       <div className="hero-section-cta">
         <img src={sunflower} alt="Sunflower mascot" className="sunflower-mascot" />
 
-        {/* Devfolio Apply Button */}
-        <iframe
-          className="cta-button"
-          src="https://apply.devfolio.co/v2/button?hackathon=hackandchill-3&theme=light"
-          frameBorder="0"
-          scrolling="no"
+        {/* Devfolio Apply Button (uses Devfolio SDK) */}
+        <div
+          className="apply-button cta-button"
+          data-hackathon-slug="hackandchill-3"
+          data-button-theme="light"
           style={{ height: "44px", width: "312px" }}
-          title="Apply with Devfolio"
-        ></iframe>
+          aria-label="Apply with Devfolio"
+        ></div>
       </div>
 
       {/* Background turbulence filter */}
