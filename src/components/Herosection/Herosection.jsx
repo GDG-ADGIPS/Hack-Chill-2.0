@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Register from "../Register/Register";
 import "./Herosection.css";
 import sunflower from "/pics/sunflower.png";
-import RegisterButton from "/pics/register-btn.svg";
 const Herosection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -36,6 +35,29 @@ const Herosection = () => {
     updateCountdown();
     const timer = setInterval(updateCountdown, 1000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    // Initialize Devfolio button when script loads
+    const initDevfolio = () => {
+      if (window.Devfolio) {
+        window.Devfolio.initialize({ 
+          customButtonSelector: '.devfolio-apply-btn'
+        });
+      }
+    };
+
+    // Check if script is already loaded
+    if (window.Devfolio) {
+      initDevfolio();
+    } else {
+      // Wait for script to load
+      const script = document.querySelector('script[src="https://apply.devfolio.co/v2/sdk.js"]');
+      if (script) {
+        script.addEventListener('load', initDevfolio);
+        return () => script.removeEventListener('load', initDevfolio);
+      }
+    }
   }, []);
 
   return (
@@ -80,11 +102,12 @@ const Herosection = () => {
         <img src={sunflower} alt="" className="sunflower-mascot" />
         {/* <Register /> */}
 
-        <button className="cta-button">
-          <a href="https://hackandchill-1.devfolio.co/">
-            <img src={RegisterButton} alt="" />
-          </a>
-        </button>
+        <div 
+          className="devfolio-apply-btn cta-button" 
+          data-hackathon-slug="hackandchill-3" 
+          data-button-theme="light"
+          style={{ height: '44px', width: '312px' }}
+        ></div>
       </div>
       <svg style={{ display: "none" }} xmlns="http://www.w3.org/2000/svg">
         <defs>
