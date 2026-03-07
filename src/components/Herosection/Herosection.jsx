@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Register from "../Register/Register";
 import "./Herosection.css";
 import sunflower from "/pics/sunflower.png";
+
 const Herosection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -11,7 +12,7 @@ const Herosection = () => {
   });
 
   useEffect(() => {
-    // Target date: 21 March 2025
+    // Target date
     const targetDate = new Date("2025-03-21T00:00:00");
 
     const updateCountdown = () => {
@@ -26,49 +27,26 @@ const Herosection = () => {
 
         setTimeLeft({ days, hours, minutes, seconds });
       } else {
-        // If the target date has passed
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
 
-    // Run immediately and then set interval
     updateCountdown();
     const timer = setInterval(updateCountdown, 1000);
     return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    // Initialize Devfolio button when script loads
-    const initDevfolio = () => {
-      if (window.Devfolio) {
-        window.Devfolio.initialize({ 
-          customButtonSelector: '.devfolio-apply-btn'
-        });
-      }
-    };
-
-    // Check if script is already loaded
-    if (window.Devfolio) {
-      initDevfolio();
-    } else {
-      // Wait for script to load
-      const script = document.querySelector('script[src="https://apply.devfolio.co/v2/sdk.js"]');
-      if (script) {
-        script.addEventListener('load', initDevfolio);
-        return () => script.removeEventListener('load', initDevfolio);
-      }
-    }
   }, []);
 
   return (
     <div className="hero-section">
       <div className="hero-section-heading">
         <h1>HACK & CHILL 3.0</h1>
+
         <img
           src="/pics/honeybee.png"
           alt="Honeybee decoration"
           className="hero-section-heading-image1"
         />
+
         <img
           src="/pics/honeybee.png"
           alt="Honeybee decoration"
@@ -76,39 +54,48 @@ const Herosection = () => {
         />
       </div>
 
-      {/* Count down to March 21-23, 2025 */}
-      {/* <div className="countdown-container">
-        <div className="countdown container ">
+      {/* Countdown */}
+      {/* 
+      <div className="countdown-container">
+        <div className="countdown container">
           <div className="time-section" id="days">
             <div className="time-label">DAYS</div>
             <div className="time-value">{timeLeft.days}</div>
           </div>
+
           <div className="time-section" id="hours">
             <div className="time-label">HOURS</div>
             <div className="time-value">{timeLeft.hours}</div>
           </div>
+
           <div className="time-section" id="minutes">
             <div className="time-label">MINS</div>
             <div className="time-value">{timeLeft.minutes}</div>
           </div>
+
           <div className="time-section" id="seconds">
             <div className="time-label">SECS</div>
             <div className="time-value">{timeLeft.seconds}</div>
           </div>
         </div>
-      </div> */}
+      </div>
+      */}
 
       <div className="hero-section-cta">
-        <img src={sunflower} alt="" className="sunflower-mascot" />
-        {/* <Register /> */}
+        <img src={sunflower} alt="Sunflower mascot" className="sunflower-mascot" />
 
-        <div 
-          className="devfolio-apply-btn cta-button" 
-          data-hackathon-slug="hackandchill-3" 
-          data-button-theme="light"
-          style={{ height: '44px', width: '312px' }}
-        ></div>
+        {/* Devfolio Apply Button */}
+        <iframe
+          className="cta-button"
+          src="https://apply.devfolio.co/v2/button?hackathon=hackandchill-3&theme=light"
+          frameBorder="0"
+          scrolling="no"
+          style={{ height: "44px", width: "312px" }}
+          title="Apply with Devfolio"
+        ></iframe>
       </div>
+
+      {/* Background turbulence filter */}
       <svg style={{ display: "none" }} xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="turbulence">
